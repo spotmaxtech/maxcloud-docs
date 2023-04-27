@@ -19,6 +19,10 @@
 * [介绍](guides/project/projectList.md)
 * [事件订阅](guides/project/eventSubscribe.md)
 
+## 客户端工具
+* [kubemax](guides/client/kubemax.md)
+* [kubectl](guides/client/kubectl.md)
+
 ## 社区活动
 * [Kubernetes Workshop](cloud-university/kubernetes-zui-jia-shi-jian/README.md)
     * [基础篇](cloud-university/kubernetes-zui-jia-shi-jian/basic/README.md)
