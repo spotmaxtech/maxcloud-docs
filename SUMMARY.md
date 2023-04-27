@@ -1,4 +1,4 @@
 # Table of contents
 
-* [介绍](guide/introduction.md)
-* [快速入门](guide/quickstart.md)
+* [介绍](main/introduction.md)
+* [快速入门](main/quickstart.md)
