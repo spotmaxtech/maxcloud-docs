@@ -1,5 +1,5 @@
-# Welcome to MaxCloud document center
+# Getting Started
+Welcome to the MaxCloud Documentation! This documentation is a work in progress and is updated frequently.
 
-## Introduction
-### What is MaxCloud
-Maxcloud is a cloud native platform based on kubernetes, which provides a complete set of solutions for enterprise cloud native transformation, including kubernetes cluster management, application management, DevOps, etc.
+## Overview
+MaxCloud, Maximize Efficiency, Embrace Cloud
