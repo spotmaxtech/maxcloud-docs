@@ -10,7 +10,7 @@
   * [关联授权](guides/cluster/authorization.md)
   * [集群功能](guides/cluster/clusterFunction.md)
 
-* [应用管理](guides/bundle/readme.md)
+* [应用管理](guides/bundle/README.md)
   * [创建应用](guides/bundle/mgr.md)
   * [灰度发布](guides/bundle/canary.md)
   * [持续集成](guides/bundle/gitops.md)
