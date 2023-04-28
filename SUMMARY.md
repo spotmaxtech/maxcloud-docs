@@ -11,13 +11,13 @@
   * [关联授权](guides/cluster/authorization.md)
   * [集群功能](guides/cluster/clusterFunction.md)
 
+* [项目管理](guides/project/projectList.md)
+  * [事件订阅](guides/project/eventSubscribe.md)
+
 * [应用管理](guides/bundle/README.md)
   * [创建应用](guides/bundle/mgr.md)
   * [灰度发布](guides/bundle/canary.md)
   * [持续集成](guides/bundle/gitops.md)
-
-* [项目管理](guides/project/projectList.md)
-  * [事件订阅](guides/project/eventSubscribe.md)
 
 ## 客户端工具
 * [kubemax](guides/client/kubemax.md)
