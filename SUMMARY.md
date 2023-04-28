@@ -1,7 +1,7 @@
 # Table of contents
 
 * [介绍](guides/introduction.md)
-* [快速入门](guides/quickstart.md)
+* [快速开始](guides/quickstart.md)
 
 ## 集群管理
 * [简介](guides/cluster/clusterList.md)
