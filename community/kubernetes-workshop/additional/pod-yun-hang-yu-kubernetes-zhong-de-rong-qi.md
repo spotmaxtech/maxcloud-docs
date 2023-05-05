@@ -31,7 +31,7 @@ spec:
 为便于做练习，适当清理之前的资源是个好习惯，常用指令
 
 * **kubens** 查看当前所在的命名空间，防止误操作别人的资源
-* **kubectl get all**   查看已有部署
+* **kubectl get all** 查看已有部署
 * **kubectl delete pods --all** 删除全部的pod
 {% endhint %}
 
@@ -71,7 +71,7 @@ Kubia server starting...
 
 MaxClloud也提供了较为全面的Pod管理方式，类似终端访问、日志查看等操作也可以借助MaxCloud来完成。
 
-<figure><img src="../../../.gitbook/assets/image (102).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
 
@@ -318,4 +318,3 @@ OK！大家到这里就完成了关于pod的所有实验，是很重要的一个
 
 > * 标签是用来做什么的？
 > * 命名空间和标签在筛选资源方面有什么不同？
-

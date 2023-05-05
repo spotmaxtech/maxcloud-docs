@@ -91,7 +91,7 @@ kubectl delete po kubia
 
 MaxCloud提供Yaml部署功能，位置在`资源管理—Deployment—Yaml部署`
 
-<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```
 apiVersion: apps/v1
@@ -212,7 +212,7 @@ kubectl get pods -o wide
 
 以上这些功能均可以直接在MaxCloud平台查看
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 通过这些操作，是不是感觉比docker方式简单许多，后面还有更精彩的！
 
