@@ -17,7 +17,7 @@ docker run --rm busybox echo "Hello world"
 docker run <image>:<tag>
 ```
 
-![](<../../../.gitbook/assets/image (10).png>)
+![](<../../../.gitbook/assets/image (214) (1).png>)
 
 第一次运行时，会自动拉取最新的镜像，后面会解释更多
 
@@ -97,11 +97,11 @@ docker build -t <kubia可以起个名字> .
 
 如图片所示准备好Dockerfile和app.js文件，并处于同一个目录中，就可以运行docker build了
 
-![](<../../../.gitbook/assets/image (96).png>)
+![](<../../../.gitbook/assets/image (1) (1).png>)
 
 很快就完成了，list一下做好的容器镜像看看
 
-![](<../../../.gitbook/assets/image (101).png>)
+![](<../../../.gitbook/assets/image (209) (1).png>)
 
 {% hint style="warning" %}
 如果大家共用一个docker环境，需要避免名字冲突，如镜像名字、容器名字
@@ -149,7 +149,7 @@ ls /
 可以知道容器就是把应用完整的环境封装起来运行了，和外部环境是独立的
 
 {% hint style="success" %}
-control + d   可以从容器shell里退出来
+control + d 可以从容器shell里退出来
 {% endhint %}
 
 ## 练习常用的操作
@@ -186,4 +186,3 @@ docker push luksa/kubia
 > * 请问docker构建镜像时那个文件叫什么名字？（扩展，可以换名字么？）
 > * busybox这个镜像是做什么用的？
 > * 临时测试一个容器，用完自动销毁使用什么参数？
-

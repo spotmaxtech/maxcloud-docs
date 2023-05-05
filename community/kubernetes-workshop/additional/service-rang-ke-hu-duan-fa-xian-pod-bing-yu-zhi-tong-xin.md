@@ -153,12 +153,12 @@ wget -O- http://10.32.100.48:<30123换成你自己的端口30XXX>
 
 效果如图
 
-![](<../../../.gitbook/assets/image (152).png>)
+![](<../../../.gitbook/assets/image (228).png>)
 
 ### 使用负载均衡器
 
 {% hint style="warning" %}
-最简单但是要换钱的方式 :sweat\_smile:&#x20;
+最简单但是要换钱的方式 :sweat\_smile:
 {% endhint %}
 
 ```yaml
@@ -234,7 +234,7 @@ NAME    HOSTS               ADDRESS         PORTS   AGE
 kubia   kubia.example.com   47.52.155.217   80      60s
 ```
 
-从上面的Address代表了nginx外网ip，配置到/etc/hosts下，我们就可以用浏览器输入域名访问了，对必须输入域名。 :stuck\_out\_tongue:&#x20;
+从上面的Address代表了nginx外网ip，配置到/etc/hosts下，我们就可以用浏览器输入域名访问了，对必须输入域名。 :stuck\_out\_tongue:
 
 {% hint style="danger" %}
 这里有个扩展，就是配置nginx的443安全访问，我们不在课程中讲解了
@@ -318,7 +318,5 @@ replicationcontroller/kubia   3         3         1       3m12s
 ## 思考题
 
 > * 请说说就绪探针、健康探针
-
-
 
 ##

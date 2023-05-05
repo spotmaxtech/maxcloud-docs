@@ -2,9 +2,9 @@
 
 ## 部署并创建[Bundle](https://doc.spotmaxtech.com/guide/workshop/bundleManagement.html)
 
-进入”应用管理“，点击 “Apply Yaml” 勾选 “将以上资源打包成一个应用”，&#x20;
+进入”应用管理“，点击 “Apply Yaml” 勾选 “将以上资源打包成一个应用”，
 
-![](<../../../.gitbook/assets/image (186).png>)
+![](<../../../.gitbook/assets/image (209) (1) (1) (1).png>)
 
 ```
 apiVersion: apps/v1
@@ -34,7 +34,7 @@ spec:
 
 ![](<../../../.gitbook/assets/image (210).png>)
 
-![](<../../../.gitbook/assets/image (259).png>)
+![](<../../../.gitbook/assets/image (208) (1) (1).png>)
 
 ```
 #!/bin/bash
@@ -56,7 +56,7 @@ curl --location --request POST 'https://maxcloud-api.spotmaxtech.com/api/externa
 
 ## 更改期望的版本为v2， 保存并执行
 
-将下面的代码片段保存为v2.sh&#x20;
+将下面的代码片段保存为v2.sh
 
 ```
 #!/bin/bash
@@ -85,7 +85,7 @@ chmod +x v2.sh
 
 点击 Bundle -> Deployment 验证已经升级到V2版本
 
-![](<../../../.gitbook/assets/image (215).png>)
+![](<../../../.gitbook/assets/image (210) (1).png>)
 
 这个脚本也可以使用jenkins等CI/CD工具， 集成部署过程
 
@@ -93,7 +93,7 @@ chmod +x v2.sh
 
 创建Helm仓库， 这里我们使用[https://raw.githubusercontent.com/kuiche1982/helm-example/main/kubia](https://raw.githubusercontent.com/kuiche1982/helm-example/main/kubia) （已经为大家添加到了实验环境里）
 
-![](<../../../.gitbook/assets/image (83).png>)
+![](<../../../.gitbook/assets/image (213) (1).png>)
 
 部署Helm
 
@@ -110,7 +110,7 @@ kubiahelm       chenkui         1               2022-07-12 11:35:10.226574729 +0
 
 配置Gitops
 
-![](<../../../.gitbook/assets/image (72).png>)
+![](<../../../.gitbook/assets/image (216) (1).png>)
 
 ```
 #!/bin/bash

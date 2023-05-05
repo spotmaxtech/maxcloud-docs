@@ -20,7 +20,7 @@
 kubectl get nodes
 ```
 
-<figure><img src="../../../.gitbook/assets/image (91).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 终端环境已经给 kubectl 做了alias别名，后续我们使用k
@@ -89,8 +89,11 @@ kubectl delete po kubia
 
 用文件（Yaml语法）方式重新部署kubia服务
 
+MaxCloud提供Yaml部署功能，位置在`资源管理—Deployment—Yaml部署`
+
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
 ```
-kubectl apply -f -<<EOF
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -130,8 +133,9 @@ spec:
     app: kubia
   sessionAffinity: None
   type: LoadBalancer
-EOF
 ```
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ```
 $ k get replicaset
@@ -207,8 +211,6 @@ kubectl get pods -o wide
 ```
 
 通过这些操作，是不是感觉比docker方式简单许多，后面还有更精彩的！
-
-
 
 恭喜恭喜！
 

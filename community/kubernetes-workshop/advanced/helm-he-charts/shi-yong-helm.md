@@ -143,7 +143,7 @@ APP VERSION: 6.2.7
 
 这样我们就安装了reids数据库（1个master3个replica）
 
-<img src="../../../../.gitbook/assets/image (217).png" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/image (192).png" alt="" data-size="original">
 
 {% hint style="info" %}
 此时可以关联到maxcloud bundle展示
@@ -192,7 +192,7 @@ image:
 
 好了，我们升级完成了！
 
-![](<../../../../.gitbook/assets/image (205).png>)
+![](<../../../../.gitbook/assets/image (207) (1) (1) (1) (1).png>)
 
 ## helm rollback
 
@@ -222,7 +222,7 @@ null
 ```
 
 {% hint style="info" %}
-Usage: helm rollback \<RELEASE>  \[REVISION] \[flags]
+Usage: helm rollback \<RELEASE> \[REVISION] \[flags]
 
 注意需要指定版本
 {% endhint %}
@@ -247,7 +247,7 @@ NAME	NAMESPACE	REVISION	UPDATED	STATUS	CHART	APP VERSION
 
 有时候我们想要用的chart没有在默认的repository存储库里，这个时候需要添加个性化的存储库.
 
-### helm repo list &#x20;
+### helm repo list
 
 列出所有的存储库列表
 
@@ -257,7 +257,7 @@ NAME   	URL
 bitnami	https://charts.bitnami.com/bitnami
 ```
 
-### helm repo add&#x20;
+### helm repo add
 
 添加存储库
 
