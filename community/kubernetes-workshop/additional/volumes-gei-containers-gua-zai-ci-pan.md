@@ -59,7 +59,7 @@ NAME          READY   STATUS    RESTARTS   AGE
 pod/fortune   2/2     Running   0          48s
 
 $ kubectl exec fortune --container web-server -- curl -s http://localhost/
-So this is it.  We're going to die.
+Hope that the day after you die is a nice day.
 
 $ kubectl exec fortune --container web-server -- ls /usr/share/nginx/html
 index.html
@@ -196,7 +196,7 @@ $ k create -f mongodb-pod-pvc.yaml
 pod/mongodb created
 ```
 
-&#x20;然后查看pod/pvc/pv等资源情况
+然后查看pod/pvc/pv等资源情况
 
 ![](<../../../.gitbook/assets/image (47).png>)
 
