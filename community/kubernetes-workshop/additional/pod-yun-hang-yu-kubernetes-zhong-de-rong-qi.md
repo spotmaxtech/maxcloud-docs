@@ -71,7 +71,7 @@ Kubia server starting...
 
 MaxClloud也提供了较为全面的Pod管理方式，类似终端访问、日志查看等操作也可以借助MaxCloud来完成。
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
 

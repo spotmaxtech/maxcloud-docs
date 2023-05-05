@@ -28,6 +28,20 @@ kubectl get nodes
 alias k=kubectl
 {% endhint %}
 
+也可导出Kubeconfig，配置本地集群访问环境，在本地Terminal进行Kubectl相关操作，方式如下：
+
+项目管理—找到自己的项目—导出Kubeconfig
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+导出的Kubeconfig文件放到本地**.kube**路径下，并使用**kubens**切换到自己的命名空间
+
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+
+
 ## 部署与访问你的应用
 
 现在正式在kubernetes中部署我们的应用
@@ -91,7 +105,7 @@ kubectl delete po kubia
 
 MaxCloud提供Yaml部署功能，位置在`资源管理—Deployment—Yaml部署`
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```
 apiVersion: apps/v1
@@ -212,7 +226,7 @@ kubectl get pods -o wide
 
 以上这些功能均可以直接在MaxCloud平台查看
 
-<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 通过这些操作，是不是感觉比docker方式简单许多，后面还有更精彩的！
 
