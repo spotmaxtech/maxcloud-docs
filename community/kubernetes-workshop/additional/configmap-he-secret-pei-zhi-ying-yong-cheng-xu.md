@@ -371,7 +371,8 @@ Well！现在我们体验了如何在kubernetes中为自己的应用使用配置
 首先创建一个secret
 
 ```yaml
-k create secret generic ali-key --from-literal=key=1234567890abcdefghijk --from-literal=secret=secret1234567890abcdefg
+$ k create secret generic ali-key --from-literal=key=1234567890abcdefghijk --from-literal=secret=secret1234567890abcdefg
+secret/ali-key created
 ```
 
 查看已经创建的secret
