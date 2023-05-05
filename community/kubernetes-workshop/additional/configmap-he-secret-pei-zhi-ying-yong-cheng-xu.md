@@ -118,6 +118,11 @@ Forwarding from [::1]:8080 -> 80
 
 ```
 $ while true; do curl http://localhost:8080; sleep 3;  done
+Q:	What's the difference between an Irish wedding and an Irish wake?
+A:	One less drunk.
+Your lucky number is 3552664958674928.  Watch for it everywhere.
+Your lucky number is 3552664958674928.  Watch for it everywhere.
+...
 ```
 
 ## 通过ConfigMap配置应用程序
@@ -449,4 +454,3 @@ k apply -f package-test.yaml
 ## 思考题
 
 > * 请谈谈都有哪几种配置应用的方式，和传统开发的区别
-
