@@ -105,7 +105,9 @@ pod "kubia" deleted
 
 用文件（Yaml语法）方式重新部署kubia服务
 
-MaxCloud提供Yaml部署功能，位置在`资源管理—Deployment—Yaml部署`
+MaxCloud提供Yaml部署功能
+
+`资源管理—Deployment—Yaml部署`
 
 <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -152,6 +154,30 @@ spec:
 ```
 
 <figure><img src="../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+
+资源管理—Service—Yaml部署
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: kubia
+  name: kubia
+spec:
+  externalTrafficPolicy: Cluster
+  ports:
+  - nodePort: 31958
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: kubia
+  sessionAffinity: None
+  type: LoadBalancer
+```
+
+<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 ```
 $ k get replicaset
