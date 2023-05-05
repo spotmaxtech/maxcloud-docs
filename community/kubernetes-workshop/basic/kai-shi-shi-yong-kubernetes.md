@@ -97,8 +97,10 @@ You've hit kubia
 首先清理之前的pod和service
 
 ```
-kubectl delete svc kubia
-kubectl delete po kubia
+zhaoying@zhaoying ~ $ kubectl delete svc kubia
+service "kubia" deleted
+zhaoying@zhaoying ~ $ kubectl delete po kubia
+pod "kubia" deleted
 ```
 
 用文件（Yaml语法）方式重新部署kubia服务
