@@ -399,7 +399,7 @@ secret:  23 bytes
 我们现在就可以使用secret了，写一个yaml
 
 ```yaml
-apiVersion: batch/v1beta1
+apiVersion: batch/v1
 kind: CronJob
 metadata:
   name: package-test
