@@ -2,6 +2,8 @@
 
 ## 为pod创建一个简单的yaml描述文件
 
+在本地保存kubia-manual.yaml文件
+
 ```yaml
 #cat kubia-manual.yaml
 apiVersion: v1
