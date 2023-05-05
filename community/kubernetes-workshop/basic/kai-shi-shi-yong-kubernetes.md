@@ -77,10 +77,10 @@ NAME    TYPE           CLUSTER-IP       EXTERNAL-IP                             
 kubia   LoadBalancer   10.100.114.238   aa4ace9d6de084763b9ca80bcccf121e-357969387.ap-east-1.elb.amazonaws.com   8080:30207/TCP   16s
 ```
 
-看到了LoadBalancer后，测试一下
+看到了LoadBalancer后，测试一下，注意替换EXTERNAL-IP
 
 ```
-$ curl http://aa4ace9d6de084763b9ca80bcccf121e-357969387.ap-east-1.elb.amazonaws.com:8080
+$ curl http://<EXTERNAL-IP>:8080
 You've hit kubia
 ```
 
