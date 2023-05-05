@@ -36,7 +36,7 @@ alias k=kubectl
 
 导出的Kubeconfig文件放到本地**.kube**路径下，并使用**kubens**切换到自己的命名空间
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -111,7 +111,7 @@ MaxCloud提供Yaml部署功能
 
 <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-```
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -133,29 +133,11 @@ spec:
         image: luksa/kubia
         ports:
         - containerPort: 8080
----
-apiVersion: v1
-kind: Service
-metadata:
-  labels:
-    app: kubia
-  name: kubia
-spec:
-  externalTrafficPolicy: Cluster
-  ports:
-  - nodePort: 31958
-    port: 8080
-    protocol: TCP
-    targetPort: 8080
-  selector:
-    app: kubia
-  sessionAffinity: None
-  type: LoadBalancer
 ```
 
-<figure><img src="../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-资源管理—Service—Yaml部署
+`资源管理—Service—Yaml部署`
 
 ```yaml
 apiVersion: v1
