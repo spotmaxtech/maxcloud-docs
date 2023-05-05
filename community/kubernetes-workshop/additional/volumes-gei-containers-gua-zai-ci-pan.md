@@ -148,6 +148,10 @@ alicloud-disk-ssd          alicloud/disk   7d18h
 $ k create -f mongodb-pvc.yaml
 persistentvolumeclaim/mongodb-pvc created
 
+$ k get pvc
+NAME          STATUS   VOLUME                   CAPACITY   ACCESS MODES   STORAGECLASS              AGE
+mongodb-pvc   Bound    d-bp197837ejmwiiez65pn   20Gi       RWO            alicloud-disk-available   27s
+
 $ k describe pvc/mongodb-pvc
 Name:          mongodb-pvc
 Namespace:     liuzongxian
