@@ -24,6 +24,9 @@
 * [kubemax](guides/client/kubemax.md)
 * [kubectl](guides/client/kubectl.md)
 
+## MaxLang 帮助文档
+* [MaxLang](maxlang/help.md)
+
 ## 社区活动
 
 * [Kubernetes Workshop](community/kubernetes-workshop/README.md)
