@@ -1,12 +1,10 @@
+
 # MaxLang Quick Start 
 ## -- All New Design, All For DevOps
 `MaxLang` is the dedicated programming language for automating the DevOps tasks, which is implemented and maintained by SpotMax team.
 
-## addOrUpdateRepo
-``` 
-addOrUpdateRepo(参数1, 参数2, 参数3)
-``` 
-
+## addOrUpdateRepo:
+#### 方法描述:
 ``` 
 Helm 安装添加Repo
 		addOrUpdateRepo(bj_demo_crazywolf, "bitnami", "https://charts.bitnami.com/bitnami")
@@ -24,11 +22,13 @@ Helm 安装添加Repo
 		参数3：repo URL
 ```
 
-## applyYaml
+#### 示例:
 ``` 
-applyYaml(参数1, 参数2)
+addOrUpdateRepo(参数1, 参数2, 参数3)
 ``` 
 
+## applyYaml:
+#### 方法描述:
 ``` 
 获取Pod详情
 		applyYaml(bj_demo_crazywolf, yaml) 
@@ -54,7 +54,18 @@ applyYaml(参数1, 参数2)
 		  data: b64ded"
 ```
 
-## build_bundle_group_scale_plan
+#### 示例:
+``` 
+applyYaml(参数1, 参数2)
+``` 
+
+## build_bundle_group_scale_plan:
+#### 方法描述:
+``` 
+构建bundle_group的伸缩计划
+```
+
+#### 示例:
 ``` 
 build_bundle_group_scale_plan({
 	"team_id":3,
@@ -64,11 +75,13 @@ build_bundle_group_scale_plan({
 })
 ``` 
 
+## build_bundle_group_scale_plan:
+#### 方法描述:
 ``` 
 构建bundle_group的伸缩计划
 ```
 
-## build_bundle_group_scale_plan
+#### 示例:
 ``` 
 build_bundle_group_scale_plan({
 	"team_id":3,
@@ -78,33 +91,30 @@ build_bundle_group_scale_plan({
 })
 ``` 
 
-``` 
-构建bundle_group的伸缩计划
-```
-
-## bundle_group_scare
-``` 
-bundle_group_scare(plan)
-``` 
-
+## bundle_group_scare:
+#### 方法描述:
 ``` 
 根据bundle伸缩计划进行bundle的伸缩
 ```
 
-## bundle_group_scare
+#### 示例:
 ``` 
 bundle_group_scare(plan)
 ``` 
 
+## bundle_group_scare:
+#### 方法描述:
 ``` 
 根据bundle伸缩计划进行bundle的伸缩
 ```
 
-## createCluster
+#### 示例:
 ``` 
-createCluster(credential, provider, region, name, vpcId, subnetIds, template string)
+bundle_group_scare(plan)
 ``` 
 
+## createCluster:
+#### 方法描述:
 ``` 
 创建K8S集群
 
@@ -120,11 +130,13 @@ createCluster(credential, provider, region, name, vpcId, subnetIds, template str
 		createCluster(credential, provider, region, name, vpcId, subnetIds, template string)
 ```
 
-## createNamespace
+#### 示例:
 ``` 
-createNamespace(参数1, 参数2)
+createCluster(credential, provider, region, name, vpcId, subnetIds, template string)
 ``` 
 
+## createNamespace:
+#### 方法描述:
 ``` 
 创建命名空间
 		bj_demo_crazywolf = {
@@ -140,11 +152,13 @@ createNamespace(参数1, 参数2)
 		参数2：新命名空间名称
 ```
 
-## createNodegroup
+#### 示例:
 ``` 
-createNodegroup(provider, region, clusterID, name, odOrSpot, instanceCount, instanceTypes, subnetIDs, template)
+createNamespace(参数1, 参数2)
 ``` 
 
+## createNodegroup:
+#### 方法描述:
 ``` 
 创建nodegoup
 
@@ -160,11 +174,13 @@ createNodegroup(provider, region, clusterID, name, odOrSpot, instanceCount, inst
 		参数会替换模版中相应的字段。 如name参数会替换template中的name字段
 ```
 
-## deleteCluster
+#### 示例:
 ``` 
-deleteCluster(credential, provider, region, clusterID)
+createNodegroup(provider, region, clusterID, name, odOrSpot, instanceCount, instanceTypes, subnetIDs, template)
 ``` 
 
+## deleteCluster:
+#### 方法描述:
 ``` 
 删除K8S集群
 		credential = "aliCredit"
@@ -175,20 +191,24 @@ deleteCluster(credential, provider, region, clusterID)
 		deleteCluster(credential, provider, region, clusterID)
 ```
 
-## deleteNodegroup
+#### 示例:
 ``` 
-deleteNodegroup(credential, provider, region, clusterID, nodegroupID)
+deleteCluster(credential, provider, region, clusterID)
 ``` 
 
+## deleteNodegroup:
+#### 方法描述:
 ``` 
 删除K8S集群的节点组
 ```
 
-## deleteResource
+#### 示例:
 ``` 
-deleteResource(参数1, 参数2， 参数3)
+deleteNodegroup(credential, provider, region, clusterID, nodegroupID)
 ``` 
 
+## deleteResource:
+#### 方法描述:
 ``` 
 创建命名空间
 		bj_demo_crazywolf = {
@@ -225,11 +245,13 @@ deleteResource(参数1, 参数2， 参数3)
 		参数3：资源名称
 ```
 
-## describeResource
+#### 示例:
 ``` 
-describeResource(参数1, 参数2， 参数3)
+deleteResource(参数1, 参数2， 参数3)
 ``` 
 
+## describeResource:
+#### 方法描述:
 ``` 
 Describe 资源
 		bj_demo_crazywolf = {
@@ -266,29 +288,35 @@ Describe 资源
 		参数3：资源名称
 ```
 
-## detailBundle
+#### 示例:
 ``` 
-detailBundle(env,bundleId)
+describeResource(参数1, 参数2， 参数3)
 ``` 
 
+## detailBundle:
+#### 方法描述:
 ``` 
 获取bundle详情
 ```
 
-## detailBundleGroup
+#### 示例:
 ``` 
-detailBundleGroup(teamId,bundleGroupId)
+detailBundle(env,bundleId)
 ``` 
 
+## detailBundleGroup:
+#### 方法描述:
 ``` 
 获取bundleGroup详情
 ```
 
-## detailPod
+#### 示例:
 ``` 
-detailPod(参数1, 参数2)
+detailBundleGroup(teamId,bundleGroupId)
 ``` 
 
+## detailPod:
+#### 方法描述:
 ``` 
 获取Pod详情
 		detailPod(bj_demo_crazywolf, "my-wordpress-mariadb-0")
@@ -325,11 +353,13 @@ detailPod(参数1, 参数2)
 			storageclass
 ```
 
-## detailResource
+#### 示例:
 ``` 
-detailResource(参数1, 参数2，参数3)
+detailPod(参数1, 参数2)
 ``` 
 
+## detailResource:
+#### 方法描述:
 ``` 
 获取资源详情
 		detailResource(bj_demo_crazywolf, "deployment", "ngxin-dep-0")
@@ -367,11 +397,13 @@ detailResource(参数1, 参数2，参数3)
 		参数2：资源名称
 ```
 
-## exec
+#### 示例:
 ``` 
-exec( arg1 )
+detailResource(参数1, 参数2，参数3)
 ``` 
 
+## exec:
+#### 方法描述:
 ``` 
 execute  shell cmd and return the output
 
@@ -384,11 +416,13 @@ execute  shell cmd and return the output
 		output of shell cmd arg1
 ```
 
-## execSql
+#### 示例:
 ``` 
-execSql(参数1)
+exec( arg1 )
 ``` 
 
+## execSql:
+#### 方法描述:
 ``` 
 执行SQL语句
 	example 
@@ -402,11 +436,13 @@ execSql(参数1)
 		execSql(sql)
 ```
 
-## fillTemp
+#### 示例:
 ``` 
-fillTemp( arg1, arg2 )
+execSql(参数1)
 ``` 
 
+## fillTemp:
+#### 方法描述:
 ``` 
 填充模版
 
@@ -430,11 +466,13 @@ fillTemp( arg1, arg2 )
 		变量被替换之后的字符串
 ```
 
-## first
+#### 示例:
 ``` 
-first(arg1)
+fillTemp( arg1, arg2 )
 ``` 
 
+## first:
+#### 方法描述:
 ``` 
 return first element of array
 
@@ -443,22 +481,26 @@ return first element of array
 	return null if arg1 is empty array
 ```
 
-## fromBase64
+#### 示例:
 ``` 
-fromBase64(string)
+first(arg1)
 ``` 
 
+## fromBase64:
+#### 方法描述:
 ``` 
 对string进行Base64解码
 		fromBase64("bW9idmlzdGE")
 		输出 mobvista
 ```
 
-## getASG
+#### 示例:
 ``` 
-getASG(参数1,参数2,参数3,参数4)
+fromBase64(string)
 ``` 
 
+## getASG:
+#### 方法描述:
 ``` 
 获取asg
 		参数1：云商credential ，请先试用setCredential(name, key, value 设置)
@@ -472,11 +514,13 @@ getASG(参数1,参数2,参数3,参数4)
 		getASG("credential", "us-west-2", "asgName")
 ```
 
-## getAliASG
+#### 示例:
 ``` 
-getAliASG(参数1,参数2,参数3)
+getASG(参数1,参数2,参数3,参数4)
 ``` 
 
+## getAliASG:
+#### 方法描述:
 ``` 
 获取asg
 		参数1：云商credential ，请先试用setCredential(name, key, value 设置)
@@ -488,11 +532,13 @@ getAliASG(参数1,参数2,参数3)
 		getAliASG("credential", "us-west-2", "asgName")
 ```
 
-## getAwsASG
+#### 示例:
 ``` 
-getAwsASG(参数1,参数2,参数3)
+getAliASG(参数1,参数2,参数3)
 ``` 
 
+## getAwsASG:
+#### 方法描述:
 ``` 
 获取asg
 		参数1：云商credential ，请先试用setCredential(name, key, value 设置)
@@ -504,21 +550,24 @@ getAwsASG(参数1,参数2,参数3)
 		getAwsASG("credential", "us-west-2", "asgName")
 ```
 
-## getClusterKubeConf
+#### 示例:
 ``` 
-getClusterKubeConf(credential, provider, region, clusterID)
+getAwsASG(参数1,参数2,参数3)
 ``` 
 
+## getClusterKubeConf:
+#### 方法描述:
 ``` 
 获取集群的kubeConfig
 ```
 
-## getCreateClusterTemplate
+#### 示例:
 ``` 
-getCreateClusterTemplate(credential, provider)
-getCreateClusterTemplate(credential, provider, terwayPlugin)
+getClusterKubeConf(credential, provider, region, clusterID)
 ``` 
 
+## getCreateClusterTemplate:
+#### 方法描述:
 ``` 
 获取创建集群的模版字符串
 	terwayPlugin:
@@ -527,20 +576,25 @@ getCreateClusterTemplate(credential, provider, terwayPlugin)
 		false: 使用默认网络插件(Flannel)
 ```
 
-## getCreateNodegroupTemplate
+#### 示例:
 ``` 
-getCreateNodegroupTemplate(credential, provider)
+getCreateClusterTemplate(credential, provider)
+getCreateClusterTemplate(credential, provider, terwayPlugin)
 ``` 
 
+## getCreateNodegroupTemplate:
+#### 方法描述:
 ``` 
 获取创建集群节点组的模版字符串
 ```
 
-## getHpaCurrent
+#### 示例:
 ``` 
-getHpaCurrent(参数1,参数2)
+getCreateNodegroupTemplate(credential, provider)
 ``` 
 
+## getHpaCurrent:
+#### 方法描述:
 ``` 
 获取HPA的 currentReplicas
 		参数1：集群环境
@@ -556,11 +610,13 @@ getHpaCurrent(参数1,参数2)
 		getHpaCurrent(bj_demo_crazywolf, "gjw-test")
 ```
 
-## getHpaMax
+#### 示例:
 ``` 
-getHpaMax(参数1,参数2)
+getHpaCurrent(参数1,参数2)
 ``` 
 
+## getHpaMax:
+#### 方法描述:
 ``` 
 获取HPA的maxReplicas
 		参数1：集群环境
@@ -576,11 +632,13 @@ getHpaMax(参数1,参数2)
 		getHpaMax(bj_demo_crazywolf, "gjw-test")
 ```
 
-## getHpaMin
+#### 示例:
 ``` 
-getHpaMin(参数1,参数2)
+getHpaMax(参数1,参数2)
 ``` 
 
+## getHpaMin:
+#### 方法描述:
 ``` 
 获取HPA的minReplicas
 		参数1：集群环境
@@ -596,11 +654,13 @@ getHpaMin(参数1,参数2)
 		getHpaMin(bj_demo_crazywolf, "gjw-test")
 ```
 
-## getHwASG
+#### 示例:
 ``` 
-getHwASG(参数1,参数2,参数3)
+getHpaMin(参数1,参数2)
 ``` 
 
+## getHwASG:
+#### 方法描述:
 ``` 
 获取asg
 		参数1：云商credential ，请先试用setCredential(name, key, value 设置)
@@ -612,20 +672,24 @@ getHwASG(参数1,参数2,参数3)
 		getHwASG("credential", "us-west-2", "asgName")
 ```
 
-## getUserSecret
+#### 示例:
 ``` 
-getUserSecret()
+getHwASG(参数1,参数2,参数3)
 ``` 
 
+## getUserSecret:
+#### 方法描述:
 ``` 
 获取签名需要的秘钥
 ```
 
-## getYaml
+#### 示例:
 ``` 
-createNamespace(参数1, 参数2)
+getUserSecret()
 ``` 
 
+## getYaml:
+#### 方法描述:
 ``` 
 创建命名空间
 		bj_demo_crazywolf = {
@@ -662,11 +726,13 @@ createNamespace(参数1, 参数2)
 		参数3：资源名称
 ```
 
-## helmValues
+#### 示例:
 ``` 
-helmValues(参数1, 参数2, 参数3)
+createNamespace(参数1, 参数2)
 ``` 
 
+## helmValues:
+#### 方法描述:
 ``` 
 Helm 查循已安装的Helm列表
 		helmValues(bj_demo_crazywolf, "my-wordpress", false)
@@ -678,11 +744,13 @@ Helm 查循已安装的Helm列表
 		参数3：是否展示所有values
 ```
 
-## importCluster
+#### 示例:
 ``` 
-importCluster(teamID, name, provider, region, k8sConfig)
+helmValues(参数1, 参数2, 参数3)
 ``` 
 
+## importCluster:
+#### 方法描述:
 ``` 
 导入K8S集群到MaxCloud
 
@@ -709,11 +777,13 @@ importCluster(teamID, name, provider, region, k8sConfig)
 		成功/错误信息
 ```
 
-## installOrUpgradeChart
+#### 示例:
 ``` 
-addOrUpdateRepo(参数1, 参数2, 参数3)
+importCluster(teamID, name, provider, region, k8sConfig)
 ``` 
 
+## installOrUpgradeChart:
+#### 方法描述:
 ``` 
 Helm 安装Chart
 		sets = {
@@ -738,20 +808,24 @@ Helm 安装Chart
 		参数5：sets参数 （可选）
 ```
 
-## isErr
+#### 示例:
 ``` 
-isErr(value)
+addOrUpdateRepo(参数1, 参数2, 参数3)
 ``` 
 
+## isErr:
+#### 方法描述:
 ``` 
 判断value是不是maxlang的 error对象
 ```
 
-## jpath
+#### 示例:
 ``` 
-jpath( arg1, arg2 )
+isErr(value)
 ``` 
 
+## jpath:
+#### 方法描述:
 ``` 
 query the json string and return target value 
 
@@ -765,11 +839,13 @@ query the json string and return target value
 		element(s) in the specified path
 ```
 
-## keys
+#### 示例:
 ``` 
-keys( arg1 )
+jpath( arg1, arg2 )
 ``` 
 
+## keys:
+#### 方法描述:
 ``` 
 get keys of HashTable as array
 
@@ -783,11 +859,13 @@ get keys of HashTable as array
 		example [1,"one", "inc","arr","table"]
 ```
 
-## last
+#### 示例:
 ``` 
-last(arg1)
+keys( arg1 )
 ``` 
 
+## last:
+#### 方法描述:
 ``` 
 return last element of array
 
@@ -796,11 +874,13 @@ return last element of array
 	return null if arg1 is empty array
 ```
 
-## len
+#### 示例:
 ``` 
-len(<string/array>) number
+last(arg1)
 ``` 
 
+## len:
+#### 方法描述:
 ``` 
 return the length of arg for following data types
 	Array:
@@ -813,12 +893,13 @@ return the length of arg for following data types
 		return argument error
 ```
 
-## listASGs
+#### 示例:
 ``` 
-listAliASGs(参数1,参数2,参数3)
-listAliASGs(参数1,参数2,参数3,参数4)
+len(<string/array>) number
 ``` 
 
+## listASGs:
+#### 方法描述:
 ``` 
 查询ASG(s)
 		参数1：云商credential ，请先试用setCredential(name, key, value 设置)
@@ -834,12 +915,14 @@ listAliASGs(参数1,参数2,参数3,参数4)
 		listASGs("credential", "us-west-2", "asgName")
 ```
 
-## listAliASGs
+#### 示例:
 ``` 
-listAliASGs(参数1,参数2)
 listAliASGs(参数1,参数2,参数3)
+listAliASGs(参数1,参数2,参数3,参数4)
 ``` 
 
+## listAliASGs:
+#### 方法描述:
 ``` 
 查询ASG(s)
 		参数1：云商credential ，请先试用setCredential(name, key, value 设置)
@@ -853,12 +936,14 @@ listAliASGs(参数1,参数2,参数3)
 		listAliASGs("credential", "us-west-2", "asgName")
 ```
 
-## listAwsASGs
+#### 示例:
 ``` 
-listAwsASGs(参数1,参数2)
-listAwsASGs(参数1,参数2,参数3)
+listAliASGs(参数1,参数2)
+listAliASGs(参数1,参数2,参数3)
 ``` 
 
+## listAwsASGs:
+#### 方法描述:
 ``` 
 查询ASG(s)
 		参数1：云商credential ，请先试用setCredential(name, key, value 设置)
@@ -872,11 +957,14 @@ listAwsASGs(参数1,参数2,参数3)
 		listAwsASGs("credential", "us-west-2", "asgName")
 ```
 
-## listBucket
+#### 示例:
 ``` 
-listBucket(参数1,参数2,参数3)
+listAwsASGs(参数1,参数2)
+listAwsASGs(参数1,参数2,参数3)
 ``` 
 
+## listBucket:
+#### 方法描述:
 ``` 
 列出Buckets
 		参数1：credential 请先试用setCredential(name, key, value)设置
@@ -884,11 +972,13 @@ listBucket(参数1,参数2,参数3)
 		参数3：endpoint(aliyun的时候必传)
 ```
 
-## listBucketFile
+#### 示例:
 ``` 
-listBucketFile(参数1,参数2,参数3,参数4,参数5)
+listBucket(参数1,参数2,参数3)
 ``` 
 
+## listBucketFile:
+#### 方法描述:
 ``` 
 列出Bucket的文件
 		参数1：credential 请先试用setCredential(name, key, value)设置
@@ -898,20 +988,24 @@ listBucketFile(参数1,参数2,参数3,参数4,参数5)
 		参数5：endpoint(aliyun的时候必传)
 ```
 
-## listBundleGroup
+#### 示例:
 ``` 
-listBundleGroup(teamId,page,page_size)
+listBucketFile(参数1,参数2,参数3,参数4,参数5)
 ``` 
 
+## listBundleGroup:
+#### 方法描述:
 ``` 
 获取BundleGroup列表
 ```
 
-## listCluster
+#### 示例:
 ``` 
-listCluster(arg1， arg2)
+listBundleGroup(teamId,page,page_size)
 ``` 
 
+## listCluster:
+#### 方法描述:
 ``` 
 列出MaxCloud项目组的项目
 
@@ -925,11 +1019,13 @@ listCluster(arg1， arg2)
 		项目相关的K8S集群列表
 ```
 
-## listClusters
+#### 示例:
 ``` 
-createCluster(credential, provider, region, name)
+listCluster(arg1， arg2)
 ``` 
 
+## listClusters:
+#### 方法描述:
 ``` 
 查寻K8S集群
 		credential = "aliCredit"
@@ -939,11 +1035,13 @@ createCluster(credential, provider, region, name)
 		clusters = listClusters(credential, provider, region)
 ```
 
-## listECSInstanceTypes
+#### 示例:
 ``` 
-listECSInstanceTypes(credential, provider, region, subnetZones, nodeTypeQuery)
+createCluster(credential, provider, region, name)
 ``` 
 
+## listECSInstanceTypes:
+#### 方法描述:
 ``` 
 查询该region可创建的机型
 
@@ -951,11 +1049,13 @@ listECSInstanceTypes(credential, provider, region, subnetZones, nodeTypeQuery)
 		[{"type":"general","configuration":{"cpu":2,"mem":4}},{"type":"general","configuration":{"cpu":4,"mem":8}}]
 ```
 
-## listHelmReleases
+#### 示例:
 ``` 
-listHelmReleases(参数1)
+listECSInstanceTypes(credential, provider, region, subnetZones, nodeTypeQuery)
 ``` 
 
+## listHelmReleases:
+#### 方法描述:
 ``` 
 Helm 查循已安装的Helm列表
 		listHelmReleases(bj_demo_crazywolf)
@@ -963,12 +1063,13 @@ Helm 查循已安装的Helm列表
 		参数1：集群环境变量
 ```
 
-## listHwASGs
+#### 示例:
 ``` 
-listHwASGs(参数1,参数2)
-listHwASGs(参数1,参数2,参数3)
+listHelmReleases(参数1)
 ``` 
 
+## listHwASGs:
+#### 方法描述:
 ``` 
 查询ASG(s)
 		参数1：云商credential ，请先试用setCredential(name, key, value 设置)
@@ -982,29 +1083,36 @@ listHwASGs(参数1,参数2,参数3)
 		listHwASGs("credential", "us-west-2", "asgName")
 ```
 
-## listNodeGroupNodes
+#### 示例:
 ``` 
-listNodegroups(credential, provider, region, clusterID)
+listHwASGs(参数1,参数2)
+listHwASGs(参数1,参数2,参数3)
 ``` 
 
+## listNodeGroupNodes:
+#### 方法描述:
 ``` 
 查询集群的Nodegroup
 ```
 
-## listNodegroups
+#### 示例:
 ``` 
 listNodegroups(credential, provider, region, clusterID)
 ``` 
 
+## listNodegroups:
+#### 方法描述:
 ``` 
 查询K8S集群的节点组
 ```
 
-## listPod
+#### 示例:
 ``` 
-ListPod(参数1, 参数2)
+listNodegroups(credential, provider, region, clusterID)
 ``` 
 
+## listPod:
+#### 方法描述:
 ``` 
 指定资源类型后可以获取上面指定集群命名空间下的所有资源 
 		可以只传入一个类型参数， 相当于listResource(bj_demo_crazywolf, "pod")
@@ -1021,11 +1129,13 @@ ListPod(参数1, 参数2)
 		}
 ```
 
-## listProject
+#### 示例:
 ``` 
-listProject(arg1)
+ListPod(参数1, 参数2)
 ``` 
 
+## listProject:
+#### 方法描述:
 ``` 
 列出MaxCloud项目组的项目
 
@@ -1036,11 +1146,13 @@ listProject(arg1)
 		项目名字、用户组和项目ID列表
 ```
 
-## listResource
+#### 示例:
 ``` 
-listResource(参数1, 参数2)
+listProject(arg1)
 ``` 
 
+## listResource:
+#### 方法描述:
 ``` 
 指定资源类型后可以获取上面指定集群命名空间下的所有资源 
 		可以只传入一个类型参数，也可以传入第二个参数作为临时命名空间（不会覆盖之前useCluster设置的命名空间）
@@ -1081,11 +1193,13 @@ listResource(参数1, 参数2)
 			storageclass
 ```
 
-## listSubnets
+#### 示例:
 ``` 
-listSubnets(credential, provider, region, vpcID)
+listResource(参数1, 参数2)
 ``` 
 
+## listSubnets:
+#### 方法描述:
 ``` 
 查询已有的subnets
 		credential = "aliCredit"
@@ -1105,11 +1219,13 @@ listSubnets(credential, provider, region, vpcID)
 		+----------+---------------------------+--------+
 ```
 
-## listTeam
+#### 示例:
 ``` 
-listTeam()
+listSubnets(credential, provider, region, vpcID)
 ``` 
 
+## listTeam:
+#### 方法描述:
 ``` 
 列出用户有权限的MaxCloud 组
 
@@ -1117,12 +1233,13 @@ listTeam()
 		项目组名字和ID列表
 ```
 
-## listVPCs
+#### 示例:
 ``` 
-listVPCs(credential, provider, region)
-		listVPCs(credential, provider, region, vpcName)
+listTeam()
 ``` 
 
+## listVPCs:
+#### 方法描述:
 ``` 
 查看现有VPCs
 		credential = "aliCredit"
@@ -1146,11 +1263,14 @@ listVPCs(credential, provider, region)
 		数组第2个元素开始是相应的Object， 可以进行操作
 ```
 
-## listZones
+#### 示例:
 ``` 
-listZones(credential, provider, region)
+listVPCs(credential, provider, region)
+		listVPCs(credential, provider, region, vpcName)
 ``` 
 
+## listZones:
+#### 方法描述:
 ``` 
 查看现有Zones
 		credential = "aliCredit"
@@ -1166,11 +1286,13 @@ listZones(credential, provider, region)
 		数组第2个元素开始是相应的Object， 可以进行操作
 ```
 
-## lockASG
+#### 示例:
 ``` 
-lockASG(参数1,参数2,参数3,参数4,参数5)
+listZones(credential, provider, region)
 ``` 
 
+## lockASG:
+#### 方法描述:
 ``` 
 锁定ASG容量
 		参数1：云商credential ，请先试用setCredential(name, key, value 设置)
@@ -1190,11 +1312,13 @@ lockASG(参数1,参数2,参数3,参数4,参数5)
 		lockASG("credential", "us-west-2", "asgName", 10)
 ```
 
-## lockAliASG
+#### 示例:
 ``` 
-lockAliASG(参数1,参数2,参数3,参数4)
+lockASG(参数1,参数2,参数3,参数4,参数5)
 ``` 
 
+## lockAliASG:
+#### 方法描述:
 ``` 
 锁定ASG容量
 		参数1：云商credential ，请先试用setCredential(name, key, value 设置)
@@ -1211,11 +1335,13 @@ lockAliASG(参数1,参数2,参数3,参数4)
 		lockAliASG("credential", "us-west-2", "asgName", 10)
 ```
 
-## lockAwsASG
+#### 示例:
 ``` 
-lockAwsASG(参数1,参数2,参数3,参数4)
+lockAliASG(参数1,参数2,参数3,参数4)
 ``` 
 
+## lockAwsASG:
+#### 方法描述:
 ``` 
 锁定ASG容量
 		参数1：云商credential ，请先试用setCredential(name, key, value 设置)
@@ -1230,11 +1356,13 @@ lockAwsASG(参数1,参数2,参数3,参数4)
 		lockAwsASG("credential", "us-west-2", "asgName", 10)
 ```
 
-## lockHpa
+#### 示例:
 ``` 
-lockHpa(参数1, 参数2， 参数3)
+lockAwsASG(参数1,参数2,参数3,参数4)
 ``` 
 
+## lockHpa:
+#### 方法描述:
 ``` 
 锁定HPA
 		bj_demo_crazywolf = {
@@ -1268,11 +1396,13 @@ lockHpa(参数1, 参数2， 参数3)
 			maxReplicas: 10
 ```
 
-## lockHwASG
+#### 示例:
 ``` 
-lockHwASG(参数1,参数2,参数3,参数4)
+lockHpa(参数1, 参数2， 参数3)
 ``` 
 
+## lockHwASG:
+#### 方法描述:
 ``` 
 锁定ASG容量
 		参数1：云商credential ，请先试用setCredential(name, key, value 设置)
@@ -1290,11 +1420,13 @@ lockHwASG(参数1,参数2,参数3,参数4)
 		lockHwASG("credential", "us-west-2", "asgName", 10)
 ```
 
-## loginMaxcloud
+#### 示例:
 ``` 
-loginMaxcloud( arg1 )
+lockHwASG(参数1,参数2,参数3,参数4)
 ``` 
 
+## loginMaxcloud:
+#### 方法描述:
 ``` 
 登陆MaxCloud
 
@@ -1309,29 +1441,35 @@ loginMaxcloud( arg1 )
 		TRUE/ error Object
 ```
 
-## mock_print
+#### 示例:
 ``` 
-mock_print()
+loginMaxcloud( arg1 )
 ``` 
 
+## mock_print:
+#### 方法描述:
 ``` 
 测试表格打印
 ```
 
-## mock_print
+#### 示例:
 ``` 
 mock_print()
 ``` 
 
+## mock_print:
+#### 方法描述:
 ``` 
 测试表格打印
 ```
 
-## newBucketDir
+#### 示例:
 ``` 
-newBucketDir(参数1,参数2,参数3,参数4,参数5)
+mock_print()
 ``` 
 
+## newBucketDir:
+#### 方法描述:
 ``` 
 新建Bucket的文件“
 		参数1：credential  请先试用setCredential(name, key, value)设置
@@ -1341,11 +1479,13 @@ newBucketDir(参数1,参数2,参数3,参数4,参数5)
 		参数5：endpoint(aliyun的时候必传)
 ```
 
-## nslookup
+#### 示例:
 ``` 
-nslookup(credential, "data.mintegral.com.")
+newBucketDir(参数1,参数2,参数3,参数4,参数5)
 ``` 
 
+## nslookup:
+#### 方法描述:
 ``` 
 解析域名
 		根据给定域名解析出IP或CName， 同时查找Aws Route53 对 A 类型的别名进行查找
@@ -1373,11 +1513,13 @@ nslookup(credential, "data.mintegral.com.")
 		]
 ```
 
-## ntos
+#### 示例:
 ``` 
-ntos( arg1 )
+nslookup(credential, "data.mintegral.com.")
 ``` 
 
+## ntos:
+#### 方法描述:
 ``` 
 conver number to string 
 
@@ -1388,11 +1530,13 @@ conver number to string
 		string format of the number object
 ```
 
-## openMysql
+#### 示例:
 ``` 
-execSql(参数1)
+ntos( arg1 )
 ``` 
 
+## openMysql:
+#### 方法描述:
 ``` 
 打开数据库连接
 	example 
@@ -1406,20 +1550,24 @@ execSql(参数1)
 		execSql(sql)
 ```
 
-## podExecShell
+#### 示例:
 ``` 
-podExecShell(env,"podName","container",["sh","-c","ls -al"])
+execSql(参数1)
 ``` 
 
+## podExecShell:
+#### 方法描述:
 ``` 
 在pod里面执行shell
 ```
 
-## print
+#### 示例:
 ``` 
-print(arg1, ....)
+podExecShell(env,"podName","container",["sh","-c","ls -al"])
 ``` 
 
+## print:
+#### 方法描述:
 ``` 
 output the args to Stdout
 
@@ -1430,83 +1578,101 @@ output the args to Stdout
 		the print output string
 ```
 
-## print_bundle_group
+#### 示例:
 ``` 
-print_bundle_group(teamId)
+print(arg1, ....)
 ``` 
 
+## print_bundle_group:
+#### 方法描述:
 ``` 
 根据团队ID打印bundleGroup列表
 ```
 
-## print_bundle_group
+#### 示例:
 ``` 
 print_bundle_group(teamId)
 ``` 
 
+## print_bundle_group:
+#### 方法描述:
 ``` 
 根据团队ID打印bundleGroup列表
 ```
 
-## print_bundle_group_by_plan
+#### 示例:
 ``` 
-print_bundle_group_by_plan(plan)
+print_bundle_group(teamId)
 ``` 
 
+## print_bundle_group_by_plan:
+#### 方法描述:
 ``` 
 基于伸缩计划，进行伸缩
 ```
 
-## print_bundle_group_by_plan
+#### 示例:
 ``` 
 print_bundle_group_by_plan(plan)
 ``` 
 
+## print_bundle_group_by_plan:
+#### 方法描述:
 ``` 
 基于伸缩计划，进行伸缩
 ```
 
-## print_bundle_group_health
+#### 示例:
 ``` 
-print_bundle_group_health({"team_id":3,"bundle_group_id":7})
+print_bundle_group_by_plan(plan)
 ``` 
 
+## print_bundle_group_health:
+#### 方法描述:
 ``` 
 根据团队ID和BundleGroupId打印链路监控状态
 ```
 
-## print_bundle_group_health
+#### 示例:
 ``` 
 print_bundle_group_health({"team_id":3,"bundle_group_id":7})
 ``` 
 
+## print_bundle_group_health:
+#### 方法描述:
 ``` 
 根据团队ID和BundleGroupId打印链路监控状态
 ```
 
-## print_teams
+#### 示例:
 ``` 
-print_teams()
+print_bundle_group_health({"team_id":3,"bundle_group_id":7})
 ``` 
 
+## print_teams:
+#### 方法描述:
 ``` 
 打印团队列表
 ```
 
-## print_teams
+#### 示例:
 ``` 
 print_teams()
 ``` 
 
+## print_teams:
+#### 方法描述:
 ``` 
 打印团队列表
 ```
 
-## println
+#### 示例:
 ``` 
-println(arg1, ....)
+print_teams()
 ``` 
 
+## println:
+#### 方法描述:
 ``` 
 output the args to Stdout with newline at the end
 
@@ -1517,11 +1683,13 @@ output the args to Stdout with newline at the end
 		the print output string with new line at the end
 ```
 
-## push
+#### 示例:
 ``` 
-rest(arg1, arg2)
+println(arg1, ....)
 ``` 
 
+## push:
+#### 方法描述:
 ``` 
 append arg2 to array arg1 return the new array
 
@@ -1535,20 +1703,24 @@ append arg2 to array arg1 return the new array
 		the new array
 ```
 
-## put
+#### 示例:
+``` 
+rest(arg1, arg2)
 ``` 
 
-``` 
-
+## put:
+#### 方法描述:
 ``` 
 
 ```
 
-## randStr
-``` 
-randStr( arg1 )
+#### 示例:
 ``` 
 
+``` 
+
+## randStr:
+#### 方法描述:
 ``` 
 generate random string with length = arg1
 
@@ -1561,11 +1733,13 @@ generate random string with length = arg1
 		output the generated string
 ```
 
-## rest
+#### 示例:
 ``` 
-rest(arg1)
+randStr( arg1 )
 ``` 
 
+## rest:
+#### 方法描述:
 ``` 
 return last element of array
 
@@ -1573,11 +1747,13 @@ return last element of array
 	return null if arg1 element count <= 1
 ```
 
-## scaleDeployment
+#### 示例:
 ``` 
-scaleDeployment(参数1, 参数2， 参数3)
+rest(arg1)
 ``` 
 
+## scaleDeployment:
+#### 方法描述:
 ``` 
 Scale Deployment
 		bj_demo_crazywolf = {
@@ -1595,11 +1771,13 @@ Scale Deployment
 		参数3： Replicas 数量
 ```
 
-## scaleNodeGroup
+#### 示例:
 ``` 
-scaleNodeGroup(credential, provider, region, clusterID, nodegroupID, newSize)
+scaleDeployment(参数1, 参数2， 参数3)
 ``` 
 
+## scaleNodeGroup:
+#### 方法描述:
 ``` 
 Scale nodegroup机器数量
 
@@ -1616,11 +1794,13 @@ Scale nodegroup机器数量
 		具体使用方法见 MaxLang MaxCloud.ipynb
 ```
 
-## scaleStatefulset
+#### 示例:
 ``` 
-scaleStatefulset(参数1, 参数2， 参数3)
+scaleNodeGroup(credential, provider, region, clusterID, nodegroupID, newSize)
 ``` 
 
+## scaleStatefulset:
+#### 方法描述:
 ``` 
 Scale Statefulset
 		bj_demo_crazywolf = {
@@ -1638,11 +1818,13 @@ Scale Statefulset
 		参数3： Replicas 数量
 ```
 
-## setCredential
+#### 示例:
 ``` 
-setCredential(name, key, value)
+scaleStatefulset(参数1, 参数2， 参数3)
 ``` 
 
+## setCredential:
+#### 方法描述:
 ``` 
 新增Credential
 		setCredential(name, key, value)
@@ -1656,11 +1838,13 @@ setCredential(name, key, value)
 		PS：不能重复设置，如需修改请使用updateCredential
 ```
 
-## setHpaReplicas
+#### 示例:
 ``` 
-lockHpa(参数1, 参数2, 参数3, 参数4)
+setCredential(name, key, value)
 ``` 
 
+## setHpaReplicas:
+#### 方法描述:
 ``` 
 锁定HPA
 		bj_demo_crazywolf = {
@@ -1677,11 +1861,13 @@ lockHpa(参数1, 参数2, 参数3, 参数4)
 		参数4：maxReplicas
 ```
 
-## sharePlaybook
+#### 示例:
 ``` 
-sharePlaybook("filename") && sharePlaybook("filename","user@mobvista.com")
+lockHpa(参数1, 参数2, 参数3, 参数4)
 ``` 
 
+## sharePlaybook:
+#### 方法描述:
 ``` 
 分享Playbook 文件给其他人
 		sharePlaybook("filename") && sharePlaybook("filename","user@mobvista.com")
@@ -1689,11 +1875,13 @@ sharePlaybook("filename") && sharePlaybook("filename","user@mobvista.com")
 		参数2：用户 (可选，如果不填则公开给所有MaxCloud用户)
 ```
 
-## sleep
+#### 示例:
 ``` 
-sleep(second)
+sharePlaybook("filename") && sharePlaybook("filename","user@mobvista.com")
 ``` 
 
+## sleep:
+#### 方法描述:
 ``` 
 等待N秒
 		sleep(second)
@@ -1701,11 +1889,13 @@ sleep(second)
 		参数1：休眠秒数
 ```
 
-## ston
+#### 示例:
 ``` 
-ston( arg1 )
+sleep(second)
 ``` 
 
+## ston:
+#### 方法描述:
 ``` 
 conver string to number 
 
@@ -1718,31 +1908,37 @@ conver string to number
 		error object
 ```
 
-## syncPlaybook
+#### 示例:
 ``` 
-syncPlaybook()
+ston( arg1 )
 ``` 
 
+## syncPlaybook:
+#### 方法描述:
 ``` 
 同步所有公共PlayBook 和 分享个给我的PlayBook
 ```
 
-## toBase64
+#### 示例:
 ``` 
-toBase64(string)
+syncPlaybook()
 ``` 
 
+## toBase64:
+#### 方法描述:
 ``` 
 对string进行Base64编码
 		toBase64("mobvista")
 		输出 bW9idmlzdGE
 ```
 
-## toJson
+#### 示例:
 ``` 
-toJson(参数1)
+toBase64(string)
 ``` 
 
+## toJson:
+#### 方法描述:
 ``` 
 把Maxlang Map/Array 对象转换成Json
 
@@ -1757,20 +1953,24 @@ toJson(参数1)
 		toJson(arrayObj)
 ```
 
-## trigger
+#### 示例:
 ``` 
-trigger("filename")
+toJson(参数1)
 ``` 
 
+## trigger:
+#### 方法描述:
 ``` 
 如果您需要外部触发执行某个PlayBook脚本，可以执行 trigger 方法把PlayBook文件公布为可外部触发的，然后按照输出提示触发执行
 ```
 
-## uninstallReleaseByName
+#### 示例:
 ``` 
-uninstallReleaseByName(参数1, 参数2)
+trigger("filename")
 ``` 
 
+## uninstallReleaseByName:
+#### 方法描述:
 ``` 
 Helm 卸载Release
 
@@ -1785,11 +1985,13 @@ Helm 卸载Release
 		参数2：ReleaseName
 ```
 
-## updateASG
+#### 示例:
 ``` 
-updateASG(参数1,参数2,参数3,参数4,参数5,参数6,参数7)
+uninstallReleaseByName(参数1, 参数2)
 ``` 
 
+## updateASG:
+#### 方法描述:
 ``` 
 更改ASG的最小容量、最大容量、所需容量
 		参数1：云商credential ，请先试用setCredential(name, key, value 设置)
@@ -1809,11 +2011,13 @@ updateASG(参数1,参数2,参数3,参数4,参数5,参数6,参数7)
 		updateASG("credential", "us-west-2", "asgName" ,1, 100, 50)
 ```
 
-## updateAliASG
+#### 示例:
 ``` 
-updateAliASG(参数1,参数2,参数3,参数4,参数5,参数6)
+updateASG(参数1,参数2,参数3,参数4,参数5,参数6,参数7)
 ``` 
 
+## updateAliASG:
+#### 方法描述:
 ``` 
 更改ASG的最小容量、最大容量、所需容量
 		参数1：云商credential ，请先试用setCredential(name, key, value 设置)
@@ -1831,11 +2035,13 @@ updateAliASG(参数1,参数2,参数3,参数4,参数5,参数6)
 		updateAliASG("credential", "us-west-2", "asgName", 1, 100, 50)
 ```
 
-## updateAwsASG
+#### 示例:
 ``` 
-updateAwsASG(参数1,参数2,参数3,参数4,参数5,参数6)
+updateAliASG(参数1,参数2,参数3,参数4,参数5,参数6)
 ``` 
 
+## updateAwsASG:
+#### 方法描述:
 ``` 
 更改ASG的最小容量、最大容量、所需容量
 		参数1：云商credential ，请先试用setCredential(name, key, value 设置)
@@ -1853,11 +2059,13 @@ updateAwsASG(参数1,参数2,参数3,参数4,参数5,参数6)
 		updateAwsASG("credential", "us-west-2", "asgName", 1, 100, 50)
 ```
 
-## updateCredential
+#### 示例:
 ``` 
-updateCredential(name, key, value)
+updateAwsASG(参数1,参数2,参数3,参数4,参数5,参数6)
 ``` 
 
+## updateCredential:
+#### 方法描述:
 ``` 
 修改Credential
 		updateCredential(name, key, value)
@@ -1869,11 +2077,13 @@ updateCredential(name, key, value)
 		参数3：credential value，如果是Aws credential则为 aws_secret_access_key
 ```
 
-## updateHwASG
+#### 示例:
 ``` 
-updateHwASG(参数1,参数2,参数3,参数4,参数5,参数6)
+updateCredential(name, key, value)
 ``` 
 
+## updateHwASG:
+#### 方法描述:
 ``` 
 更改ASG的最小容量、最大容量、所需容量
 		参数1：云商credential ，请先试用setCredential(name, key, value 设置)
@@ -1891,11 +2101,13 @@ updateHwASG(参数1,参数2,参数3,参数4,参数5,参数6)
 		updateHwASG("credential", "us-west-2", "asgName" ,1, 100, 50)
 ```
 
-## useCluster
+#### 示例:
 ``` 
-useCluster(arg1)
+updateHwASG(参数1,参数2,参数3,参数4,参数5,参数6)
 ``` 
 
+## useCluster:
+#### 方法描述:
 ``` 
 切换操作上下文到MaxCloud集群
 
@@ -1912,11 +2124,13 @@ useCluster(arg1)
 		TRUE/错误信息
 ```
 
-## values
+#### 示例:
 ``` 
-values( arg1 )
+useCluster(arg1)
 ``` 
 
+## values:
+#### 方法描述:
 ``` 
 get values of HashTable as array
 
@@ -1929,4 +2143,9 @@ get values of HashTable as array
 		keys as array of the HashTable
 		example ["one", 1, fn(x){x+1}, [1,2,3,5], {2:"two","sub":fn(x){x-1}}]
 ```
+
+#### 示例:
+``` 
+values( arg1 )
+``` 
 
