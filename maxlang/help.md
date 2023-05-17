@@ -2,7 +2,7 @@
 ## -- All New Design, All For DevOps
 `MaxLang` is the dedicated programming language for automating the DevOps tasks, which is implemented and maintained by SpotMax team.
 
-## 方法名：addOrUpdateRepo
+## addOrUpdateRepo
 #### 方法描述:
 ``` 
 Helm 安装添加Repo
@@ -26,7 +26,7 @@ Helm 安装添加Repo
 addOrUpdateRepo(参数1, 参数2, 参数3)
 ``` 
 
-## 方法名：applyYaml
+## applyYaml
 #### 方法描述:
 ``` 
 获取Pod详情
@@ -58,7 +58,7 @@ addOrUpdateRepo(参数1, 参数2, 参数3)
 applyYaml(参数1, 参数2)
 ``` 
 
-## 方法名：build_bundle_group_scale_plan
+## build_bundle_group_scale_plan
 #### 方法描述:
 ``` 
 构建bundle_group的伸缩计划
@@ -74,7 +74,7 @@ build_bundle_group_scale_plan({
 })
 ``` 
 
-## 方法名：build_bundle_group_scale_plan
+## build_bundle_group_scale_plan
 #### 方法描述:
 ``` 
 构建bundle_group的伸缩计划
@@ -90,7 +90,7 @@ build_bundle_group_scale_plan({
 })
 ``` 
 
-## 方法名：bundle_group_scare
+## bundle_group_scare
 #### 方法描述:
 ``` 
 根据bundle伸缩计划进行bundle的伸缩
@@ -101,7 +101,7 @@ build_bundle_group_scale_plan({
 bundle_group_scare(plan)
 ``` 
 
-## 方法名：bundle_group_scare
+## bundle_group_scare
 #### 方法描述:
 ``` 
 根据bundle伸缩计划进行bundle的伸缩
@@ -112,7 +112,7 @@ bundle_group_scare(plan)
 bundle_group_scare(plan)
 ``` 
 
-## 方法名：createCluster
+## createCluster
 #### 方法描述:
 ``` 
 创建K8S集群
@@ -134,7 +134,7 @@ bundle_group_scare(plan)
 createCluster(credential, provider, region, name, vpcId, subnetIds, template string)
 ``` 
 
-## 方法名：createNamespace
+## createNamespace
 #### 方法描述:
 ``` 
 创建命名空间
@@ -156,7 +156,7 @@ createCluster(credential, provider, region, name, vpcId, subnetIds, template str
 createNamespace(参数1, 参数2)
 ``` 
 
-## 方法名：createNodegroup
+## createNodegroup
 #### 方法描述:
 ``` 
 创建nodegoup
@@ -178,7 +178,7 @@ createNamespace(参数1, 参数2)
 createNodegroup(provider, region, clusterID, name, odOrSpot, instanceCount, instanceTypes, subnetIDs, template)
 ``` 
 
-## 方法名：deleteCluster
+## deleteCluster
 #### 方法描述:
 ``` 
 删除K8S集群
@@ -195,7 +195,7 @@ createNodegroup(provider, region, clusterID, name, odOrSpot, instanceCount, inst
 deleteCluster(credential, provider, region, clusterID)
 ``` 
 
-## 方法名：deleteNodegroup
+## deleteNodegroup
 #### 方法描述:
 ``` 
 删除K8S集群的节点组
@@ -206,7 +206,7 @@ deleteCluster(credential, provider, region, clusterID)
 deleteNodegroup(credential, provider, region, clusterID, nodegroupID)
 ``` 
 
-## 方法名：deleteResource
+## deleteResource
 #### 方法描述:
 ``` 
 创建命名空间
@@ -249,7 +249,7 @@ deleteNodegroup(credential, provider, region, clusterID, nodegroupID)
 deleteResource(参数1, 参数2， 参数3)
 ``` 
 
-## 方法名：describeResource
+## describeResource
 #### 方法描述:
 ``` 
 Describe 资源
@@ -292,7 +292,7 @@ Describe 资源
 describeResource(参数1, 参数2， 参数3)
 ``` 
 
-## 方法名：detailBundle
+## detailBundle
 #### 方法描述:
 ``` 
 获取bundle详情
@@ -303,7 +303,7 @@ describeResource(参数1, 参数2， 参数3)
 detailBundle(env,bundleId)
 ``` 
 
-## 方法名：detailBundleGroup
+## detailBundleGroup
 #### 方法描述:
 ``` 
 获取bundleGroup详情
@@ -314,7 +314,7 @@ detailBundle(env,bundleId)
 detailBundleGroup(teamId,bundleGroupId)
 ``` 
 
-## 方法名：detailPod
+## detailPod
 #### 方法描述:
 ``` 
 获取Pod详情
@@ -357,7 +357,7 @@ detailBundleGroup(teamId,bundleGroupId)
 detailPod(参数1, 参数2)
 ``` 
 
-## 方法名：detailResource
+## detailResource
 #### 方法描述:
 ``` 
 获取资源详情
@@ -401,7 +401,7 @@ detailPod(参数1, 参数2)
 detailResource(参数1, 参数2，参数3)
 ``` 
 
-## 方法名：exec
+## exec
 #### 方法描述:
 ``` 
 execute  shell cmd and return the output
@@ -420,7 +420,7 @@ execute  shell cmd and return the output
 exec( arg1 )
 ``` 
 
-## 方法名：execSql
+## execSql
 #### 方法描述:
 ``` 
 执行SQL语句
@@ -440,7 +440,7 @@ exec( arg1 )
 execSql(参数1)
 ``` 
 
-## 方法名：fillTemp
+## fillTemp
 #### 方法描述:
 ``` 
 填充模版
@@ -470,7 +470,7 @@ execSql(参数1)
 fillTemp( arg1, arg2 )
 ``` 
 
-## 方法名：first
+## first
 #### 方法描述:
 ``` 
 return first element of array
@@ -485,7 +485,7 @@ return first element of array
 first(arg1)
 ``` 
 
-## 方法名：fromBase64
+## fromBase64
 #### 方法描述:
 ``` 
 对string进行Base64解码
@@ -498,7 +498,7 @@ first(arg1)
 fromBase64(string)
 ``` 
 
-## 方法名：getASG
+## getASG
 #### 方法描述:
 ``` 
 获取asg
@@ -518,7 +518,7 @@ fromBase64(string)
 getASG(参数1,参数2,参数3,参数4)
 ``` 
 
-## 方法名：getAliASG
+## getAliASG
 #### 方法描述:
 ``` 
 获取asg
@@ -536,7 +536,7 @@ getASG(参数1,参数2,参数3,参数4)
 getAliASG(参数1,参数2,参数3)
 ``` 
 
-## 方法名：getAwsASG
+## getAwsASG
 #### 方法描述:
 ``` 
 获取asg
@@ -554,7 +554,7 @@ getAliASG(参数1,参数2,参数3)
 getAwsASG(参数1,参数2,参数3)
 ``` 
 
-## 方法名：getClusterKubeConf
+## getClusterKubeConf
 #### 方法描述:
 ``` 
 获取集群的kubeConfig
@@ -565,7 +565,7 @@ getAwsASG(参数1,参数2,参数3)
 getClusterKubeConf(credential, provider, region, clusterID)
 ``` 
 
-## 方法名：getCreateClusterTemplate
+## getCreateClusterTemplate
 #### 方法描述:
 ``` 
 获取创建集群的模版字符串
@@ -581,7 +581,7 @@ getCreateClusterTemplate(credential, provider)
 getCreateClusterTemplate(credential, provider, terwayPlugin)
 ``` 
 
-## 方法名：getCreateNodegroupTemplate
+## getCreateNodegroupTemplate
 #### 方法描述:
 ``` 
 获取创建集群节点组的模版字符串
@@ -592,7 +592,7 @@ getCreateClusterTemplate(credential, provider, terwayPlugin)
 getCreateNodegroupTemplate(credential, provider)
 ``` 
 
-## 方法名：getHpaCurrent
+## getHpaCurrent
 #### 方法描述:
 ``` 
 获取HPA的 currentReplicas
@@ -614,7 +614,7 @@ getCreateNodegroupTemplate(credential, provider)
 getHpaCurrent(参数1,参数2)
 ``` 
 
-## 方法名：getHpaMax
+## getHpaMax
 #### 方法描述:
 ``` 
 获取HPA的maxReplicas
@@ -636,7 +636,7 @@ getHpaCurrent(参数1,参数2)
 getHpaMax(参数1,参数2)
 ``` 
 
-## 方法名：getHpaMin
+## getHpaMin
 #### 方法描述:
 ``` 
 获取HPA的minReplicas
@@ -658,7 +658,7 @@ getHpaMax(参数1,参数2)
 getHpaMin(参数1,参数2)
 ``` 
 
-## 方法名：getHwASG
+## getHwASG
 #### 方法描述:
 ``` 
 获取asg
@@ -676,7 +676,7 @@ getHpaMin(参数1,参数2)
 getHwASG(参数1,参数2,参数3)
 ``` 
 
-## 方法名：getUserSecret
+## getUserSecret
 #### 方法描述:
 ``` 
 获取签名需要的秘钥
@@ -687,7 +687,7 @@ getHwASG(参数1,参数2,参数3)
 getUserSecret()
 ``` 
 
-## 方法名：getYaml
+## getYaml
 #### 方法描述:
 ``` 
 创建命名空间
@@ -730,7 +730,7 @@ getUserSecret()
 createNamespace(参数1, 参数2)
 ``` 
 
-## 方法名：helmValues
+## helmValues
 #### 方法描述:
 ``` 
 Helm 查循已安装的Helm列表
@@ -748,7 +748,7 @@ Helm 查循已安装的Helm列表
 helmValues(参数1, 参数2, 参数3)
 ``` 
 
-## 方法名：importCluster
+## importCluster
 #### 方法描述:
 ``` 
 导入K8S集群到MaxCloud
@@ -781,7 +781,7 @@ helmValues(参数1, 参数2, 参数3)
 importCluster(teamID, name, provider, region, k8sConfig)
 ``` 
 
-## 方法名：installOrUpgradeChart
+## installOrUpgradeChart
 #### 方法描述:
 ``` 
 Helm 安装Chart
@@ -812,7 +812,7 @@ Helm 安装Chart
 addOrUpdateRepo(参数1, 参数2, 参数3)
 ``` 
 
-## 方法名：isErr
+## isErr
 #### 方法描述:
 ``` 
 判断value是不是maxlang的 error对象
@@ -823,7 +823,7 @@ addOrUpdateRepo(参数1, 参数2, 参数3)
 isErr(value)
 ``` 
 
-## 方法名：jpath
+## jpath
 #### 方法描述:
 ``` 
 query the json string and return target value 
@@ -843,7 +843,7 @@ query the json string and return target value
 jpath( arg1, arg2 )
 ``` 
 
-## 方法名：keys
+## keys
 #### 方法描述:
 ``` 
 get keys of HashTable as array
@@ -863,7 +863,7 @@ get keys of HashTable as array
 keys( arg1 )
 ``` 
 
-## 方法名：last
+## last
 #### 方法描述:
 ``` 
 return last element of array
@@ -878,7 +878,7 @@ return last element of array
 last(arg1)
 ``` 
 
-## 方法名：len
+## len
 #### 方法描述:
 ``` 
 return the length of arg for following data types
@@ -897,7 +897,7 @@ return the length of arg for following data types
 len(<string/array>) number
 ``` 
 
-## 方法名：listASGs
+## listASGs
 #### 方法描述:
 ``` 
 查询ASG(s)
@@ -920,7 +920,7 @@ listAliASGs(参数1,参数2,参数3)
 listAliASGs(参数1,参数2,参数3,参数4)
 ``` 
 
-## 方法名：listAliASGs
+## listAliASGs
 #### 方法描述:
 ``` 
 查询ASG(s)
@@ -941,7 +941,7 @@ listAliASGs(参数1,参数2)
 listAliASGs(参数1,参数2,参数3)
 ``` 
 
-## 方法名：listAwsASGs
+## listAwsASGs
 #### 方法描述:
 ``` 
 查询ASG(s)
@@ -962,7 +962,7 @@ listAwsASGs(参数1,参数2)
 listAwsASGs(参数1,参数2,参数3)
 ``` 
 
-## 方法名：listBucket
+## listBucket
 #### 方法描述:
 ``` 
 列出Buckets
@@ -976,7 +976,7 @@ listAwsASGs(参数1,参数2,参数3)
 listBucket(参数1,参数2,参数3)
 ``` 
 
-## 方法名：listBucketFile
+## listBucketFile
 #### 方法描述:
 ``` 
 列出Bucket的文件
@@ -992,7 +992,7 @@ listBucket(参数1,参数2,参数3)
 listBucketFile(参数1,参数2,参数3,参数4,参数5)
 ``` 
 
-## 方法名：listBundleGroup
+## listBundleGroup
 #### 方法描述:
 ``` 
 获取BundleGroup列表
@@ -1003,7 +1003,7 @@ listBucketFile(参数1,参数2,参数3,参数4,参数5)
 listBundleGroup(teamId,page,page_size)
 ``` 
 
-## 方法名：listCluster
+## listCluster
 #### 方法描述:
 ``` 
 列出MaxCloud项目组的项目
@@ -1023,7 +1023,7 @@ listBundleGroup(teamId,page,page_size)
 listCluster(arg1， arg2)
 ``` 
 
-## 方法名：listClusters
+## listClusters
 #### 方法描述:
 ``` 
 查寻K8S集群
@@ -1039,7 +1039,7 @@ listCluster(arg1， arg2)
 createCluster(credential, provider, region, name)
 ``` 
 
-## 方法名：listECSInstanceTypes
+## listECSInstanceTypes
 #### 方法描述:
 ``` 
 查询该region可创建的机型
@@ -1053,7 +1053,7 @@ createCluster(credential, provider, region, name)
 listECSInstanceTypes(credential, provider, region, subnetZones, nodeTypeQuery)
 ``` 
 
-## 方法名：listHelmReleases
+## listHelmReleases
 #### 方法描述:
 ``` 
 Helm 查循已安装的Helm列表
@@ -1067,7 +1067,7 @@ Helm 查循已安装的Helm列表
 listHelmReleases(参数1)
 ``` 
 
-## 方法名：listHwASGs
+## listHwASGs
 #### 方法描述:
 ``` 
 查询ASG(s)
@@ -1088,7 +1088,7 @@ listHwASGs(参数1,参数2)
 listHwASGs(参数1,参数2,参数3)
 ``` 
 
-## 方法名：listNodeGroupNodes
+## listNodeGroupNodes
 #### 方法描述:
 ``` 
 查询集群的Nodegroup
@@ -1099,7 +1099,7 @@ listHwASGs(参数1,参数2,参数3)
 listNodegroups(credential, provider, region, clusterID)
 ``` 
 
-## 方法名：listNodegroups
+## listNodegroups
 #### 方法描述:
 ``` 
 查询K8S集群的节点组
@@ -1110,7 +1110,7 @@ listNodegroups(credential, provider, region, clusterID)
 listNodegroups(credential, provider, region, clusterID)
 ``` 
 
-## 方法名：listPod
+## listPod
 #### 方法描述:
 ``` 
 指定资源类型后可以获取上面指定集群命名空间下的所有资源 
@@ -1133,7 +1133,7 @@ listNodegroups(credential, provider, region, clusterID)
 ListPod(参数1, 参数2)
 ``` 
 
-## 方法名：listProject
+## listProject
 #### 方法描述:
 ``` 
 列出MaxCloud项目组的项目
@@ -1150,7 +1150,7 @@ ListPod(参数1, 参数2)
 listProject(arg1)
 ``` 
 
-## 方法名：listResource
+## listResource
 #### 方法描述:
 ``` 
 指定资源类型后可以获取上面指定集群命名空间下的所有资源 
@@ -1197,7 +1197,7 @@ listProject(arg1)
 listResource(参数1, 参数2)
 ``` 
 
-## 方法名：listSubnets
+## listSubnets
 #### 方法描述:
 ``` 
 查询已有的subnets
@@ -1223,7 +1223,7 @@ listResource(参数1, 参数2)
 listSubnets(credential, provider, region, vpcID)
 ``` 
 
-## 方法名：listTeam
+## listTeam
 #### 方法描述:
 ``` 
 列出用户有权限的MaxCloud 组
@@ -1237,7 +1237,7 @@ listSubnets(credential, provider, region, vpcID)
 listTeam()
 ``` 
 
-## 方法名：listVPCs
+## listVPCs
 #### 方法描述:
 ``` 
 查看现有VPCs
@@ -1268,7 +1268,7 @@ listVPCs(credential, provider, region)
 		listVPCs(credential, provider, region, vpcName)
 ``` 
 
-## 方法名：listZones
+## listZones
 #### 方法描述:
 ``` 
 查看现有Zones
@@ -1290,7 +1290,7 @@ listVPCs(credential, provider, region)
 listZones(credential, provider, region)
 ``` 
 
-## 方法名：lockASG
+## lockASG
 #### 方法描述:
 ``` 
 锁定ASG容量
@@ -1316,7 +1316,7 @@ listZones(credential, provider, region)
 lockASG(参数1,参数2,参数3,参数4,参数5)
 ``` 
 
-## 方法名：lockAliASG
+## lockAliASG
 #### 方法描述:
 ``` 
 锁定ASG容量
@@ -1339,7 +1339,7 @@ lockASG(参数1,参数2,参数3,参数4,参数5)
 lockAliASG(参数1,参数2,参数3,参数4)
 ``` 
 
-## 方法名：lockAwsASG
+## lockAwsASG
 #### 方法描述:
 ``` 
 锁定ASG容量
@@ -1360,7 +1360,7 @@ lockAliASG(参数1,参数2,参数3,参数4)
 lockAwsASG(参数1,参数2,参数3,参数4)
 ``` 
 
-## 方法名：lockHpa
+## lockHpa
 #### 方法描述:
 ``` 
 锁定HPA
@@ -1400,7 +1400,7 @@ lockAwsASG(参数1,参数2,参数3,参数4)
 lockHpa(参数1, 参数2， 参数3)
 ``` 
 
-## 方法名：lockHwASG
+## lockHwASG
 #### 方法描述:
 ``` 
 锁定ASG容量
@@ -1424,7 +1424,7 @@ lockHpa(参数1, 参数2， 参数3)
 lockHwASG(参数1,参数2,参数3,参数4)
 ``` 
 
-## 方法名：loginMaxcloud
+## loginMaxcloud
 #### 方法描述:
 ``` 
 登陆MaxCloud
@@ -1445,7 +1445,7 @@ lockHwASG(参数1,参数2,参数3,参数4)
 loginMaxcloud( arg1 )
 ``` 
 
-## 方法名：mock_print
+## mock_print
 #### 方法描述:
 ``` 
 测试表格打印
@@ -1456,7 +1456,7 @@ loginMaxcloud( arg1 )
 mock_print()
 ``` 
 
-## 方法名：mock_print
+## mock_print
 #### 方法描述:
 ``` 
 测试表格打印
@@ -1467,7 +1467,7 @@ mock_print()
 mock_print()
 ``` 
 
-## 方法名：newBucketDir
+## newBucketDir
 #### 方法描述:
 ``` 
 新建Bucket的文件“
@@ -1483,7 +1483,7 @@ mock_print()
 newBucketDir(参数1,参数2,参数3,参数4,参数5)
 ``` 
 
-## 方法名：nslookup
+## nslookup
 #### 方法描述:
 ``` 
 解析域名
@@ -1517,7 +1517,7 @@ newBucketDir(参数1,参数2,参数3,参数4,参数5)
 nslookup(credential, "data.mintegral.com.")
 ``` 
 
-## 方法名：ntos
+## ntos
 #### 方法描述:
 ``` 
 conver number to string 
@@ -1534,7 +1534,7 @@ conver number to string
 ntos( arg1 )
 ``` 
 
-## 方法名：openMysql
+## openMysql
 #### 方法描述:
 ``` 
 打开数据库连接
@@ -1554,7 +1554,7 @@ ntos( arg1 )
 execSql(参数1)
 ``` 
 
-## 方法名：podExecShell
+## podExecShell
 #### 方法描述:
 ``` 
 在pod里面执行shell
@@ -1565,7 +1565,7 @@ execSql(参数1)
 podExecShell(env,"podName","container",["sh","-c","ls -al"])
 ``` 
 
-## 方法名：print
+## print
 #### 方法描述:
 ``` 
 output the args to Stdout
@@ -1582,7 +1582,7 @@ output the args to Stdout
 print(arg1, ....)
 ``` 
 
-## 方法名：print_bundle_group
+## print_bundle_group
 #### 方法描述:
 ``` 
 根据团队ID打印bundleGroup列表
@@ -1593,7 +1593,7 @@ print(arg1, ....)
 print_bundle_group(teamId)
 ``` 
 
-## 方法名：print_bundle_group
+## print_bundle_group
 #### 方法描述:
 ``` 
 根据团队ID打印bundleGroup列表
@@ -1604,7 +1604,7 @@ print_bundle_group(teamId)
 print_bundle_group(teamId)
 ``` 
 
-## 方法名：print_bundle_group_by_plan
+## print_bundle_group_by_plan
 #### 方法描述:
 ``` 
 基于伸缩计划，进行伸缩
@@ -1615,7 +1615,7 @@ print_bundle_group(teamId)
 print_bundle_group_by_plan(plan)
 ``` 
 
-## 方法名：print_bundle_group_by_plan
+## print_bundle_group_by_plan
 #### 方法描述:
 ``` 
 基于伸缩计划，进行伸缩
@@ -1626,7 +1626,7 @@ print_bundle_group_by_plan(plan)
 print_bundle_group_by_plan(plan)
 ``` 
 
-## 方法名：print_bundle_group_health
+## print_bundle_group_health
 #### 方法描述:
 ``` 
 根据团队ID和BundleGroupId打印链路监控状态
@@ -1637,7 +1637,7 @@ print_bundle_group_by_plan(plan)
 print_bundle_group_health({"team_id":3,"bundle_group_id":7})
 ``` 
 
-## 方法名：print_bundle_group_health
+## print_bundle_group_health
 #### 方法描述:
 ``` 
 根据团队ID和BundleGroupId打印链路监控状态
@@ -1648,7 +1648,7 @@ print_bundle_group_health({"team_id":3,"bundle_group_id":7})
 print_bundle_group_health({"team_id":3,"bundle_group_id":7})
 ``` 
 
-## 方法名：print_teams
+## print_teams
 #### 方法描述:
 ``` 
 打印团队列表
@@ -1659,7 +1659,7 @@ print_bundle_group_health({"team_id":3,"bundle_group_id":7})
 print_teams()
 ``` 
 
-## 方法名：print_teams
+## print_teams
 #### 方法描述:
 ``` 
 打印团队列表
@@ -1670,7 +1670,7 @@ print_teams()
 print_teams()
 ``` 
 
-## 方法名：println
+## println
 #### 方法描述:
 ``` 
 output the args to Stdout with newline at the end
@@ -1687,7 +1687,7 @@ output the args to Stdout with newline at the end
 println(arg1, ....)
 ``` 
 
-## 方法名：push
+## push
 #### 方法描述:
 ``` 
 append arg2 to array arg1 return the new array
@@ -1707,7 +1707,7 @@ append arg2 to array arg1 return the new array
 rest(arg1, arg2)
 ``` 
 
-## 方法名：put
+## put
 #### 方法描述:
 ``` 
 
@@ -1718,7 +1718,7 @@ rest(arg1, arg2)
 
 ``` 
 
-## 方法名：randStr
+## randStr
 #### 方法描述:
 ``` 
 generate random string with length = arg1
@@ -1737,7 +1737,7 @@ generate random string with length = arg1
 randStr( arg1 )
 ``` 
 
-## 方法名：rest
+## rest
 #### 方法描述:
 ``` 
 return last element of array
@@ -1751,7 +1751,7 @@ return last element of array
 rest(arg1)
 ``` 
 
-## 方法名：scaleDeployment
+## scaleDeployment
 #### 方法描述:
 ``` 
 Scale Deployment
@@ -1775,7 +1775,7 @@ Scale Deployment
 scaleDeployment(参数1, 参数2， 参数3)
 ``` 
 
-## 方法名：scaleNodeGroup
+## scaleNodeGroup
 #### 方法描述:
 ``` 
 Scale nodegroup机器数量
@@ -1798,7 +1798,7 @@ Scale nodegroup机器数量
 scaleNodeGroup(credential, provider, region, clusterID, nodegroupID, newSize)
 ``` 
 
-## 方法名：scaleStatefulset
+## scaleStatefulset
 #### 方法描述:
 ``` 
 Scale Statefulset
@@ -1822,7 +1822,7 @@ Scale Statefulset
 scaleStatefulset(参数1, 参数2， 参数3)
 ``` 
 
-## 方法名：setCredential
+## setCredential
 #### 方法描述:
 ``` 
 新增Credential
@@ -1842,7 +1842,7 @@ scaleStatefulset(参数1, 参数2， 参数3)
 setCredential(name, key, value)
 ``` 
 
-## 方法名：setHpaReplicas
+## setHpaReplicas
 #### 方法描述:
 ``` 
 锁定HPA
@@ -1865,7 +1865,7 @@ setCredential(name, key, value)
 lockHpa(参数1, 参数2, 参数3, 参数4)
 ``` 
 
-## 方法名：sharePlaybook
+## sharePlaybook
 #### 方法描述:
 ``` 
 分享Playbook 文件给其他人
@@ -1879,7 +1879,7 @@ lockHpa(参数1, 参数2, 参数3, 参数4)
 sharePlaybook("filename") && sharePlaybook("filename","user@mobvista.com")
 ``` 
 
-## 方法名：sleep
+## sleep
 #### 方法描述:
 ``` 
 等待N秒
@@ -1893,7 +1893,7 @@ sharePlaybook("filename") && sharePlaybook("filename","user@mobvista.com")
 sleep(second)
 ``` 
 
-## 方法名：ston
+## ston
 #### 方法描述:
 ``` 
 conver string to number 
@@ -1912,7 +1912,7 @@ conver string to number
 ston( arg1 )
 ``` 
 
-## 方法名：syncPlaybook
+## syncPlaybook
 #### 方法描述:
 ``` 
 同步所有公共PlayBook 和 分享个给我的PlayBook
@@ -1923,7 +1923,7 @@ ston( arg1 )
 syncPlaybook()
 ``` 
 
-## 方法名：toBase64
+## toBase64
 #### 方法描述:
 ``` 
 对string进行Base64编码
@@ -1936,7 +1936,7 @@ syncPlaybook()
 toBase64(string)
 ``` 
 
-## 方法名：toJson
+## toJson
 #### 方法描述:
 ``` 
 把Maxlang Map/Array 对象转换成Json
@@ -1957,7 +1957,7 @@ toBase64(string)
 toJson(参数1)
 ``` 
 
-## 方法名：trigger
+## trigger
 #### 方法描述:
 ``` 
 如果您需要外部触发执行某个PlayBook脚本，可以执行 trigger 方法把PlayBook文件公布为可外部触发的，然后按照输出提示触发执行
@@ -1968,7 +1968,7 @@ toJson(参数1)
 trigger("filename")
 ``` 
 
-## 方法名：uninstallReleaseByName
+## uninstallReleaseByName
 #### 方法描述:
 ``` 
 Helm 卸载Release
@@ -1989,7 +1989,7 @@ Helm 卸载Release
 uninstallReleaseByName(参数1, 参数2)
 ``` 
 
-## 方法名：updateASG
+## updateASG
 #### 方法描述:
 ``` 
 更改ASG的最小容量、最大容量、所需容量
@@ -2015,7 +2015,7 @@ uninstallReleaseByName(参数1, 参数2)
 updateASG(参数1,参数2,参数3,参数4,参数5,参数6,参数7)
 ``` 
 
-## 方法名：updateAliASG
+## updateAliASG
 #### 方法描述:
 ``` 
 更改ASG的最小容量、最大容量、所需容量
@@ -2039,7 +2039,7 @@ updateASG(参数1,参数2,参数3,参数4,参数5,参数6,参数7)
 updateAliASG(参数1,参数2,参数3,参数4,参数5,参数6)
 ``` 
 
-## 方法名：updateAwsASG
+## updateAwsASG
 #### 方法描述:
 ``` 
 更改ASG的最小容量、最大容量、所需容量
@@ -2063,7 +2063,7 @@ updateAliASG(参数1,参数2,参数3,参数4,参数5,参数6)
 updateAwsASG(参数1,参数2,参数3,参数4,参数5,参数6)
 ``` 
 
-## 方法名：updateCredential
+## updateCredential
 #### 方法描述:
 ``` 
 修改Credential
@@ -2081,7 +2081,7 @@ updateAwsASG(参数1,参数2,参数3,参数4,参数5,参数6)
 updateCredential(name, key, value)
 ``` 
 
-## 方法名：updateHwASG
+## updateHwASG
 #### 方法描述:
 ``` 
 更改ASG的最小容量、最大容量、所需容量
@@ -2105,7 +2105,7 @@ updateCredential(name, key, value)
 updateHwASG(参数1,参数2,参数3,参数4,参数5,参数6)
 ``` 
 
-## 方法名：useCluster
+## useCluster
 #### 方法描述:
 ``` 
 切换操作上下文到MaxCloud集群
@@ -2128,7 +2128,7 @@ updateHwASG(参数1,参数2,参数3,参数4,参数5,参数6)
 useCluster(arg1)
 ``` 
 
-## 方法名：values
+## values
 #### 方法描述:
 ``` 
 get values of HashTable as array
