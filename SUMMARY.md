@@ -26,6 +26,7 @@
 * [自定义客户端](guides/client/self-created-client.md)
 
 ## MaxLang 帮助文档
+* [Quick Start](maxlang/quickStart.md)
 * [MaxLang](maxlang/help.md)
 
 ## 社区活动
