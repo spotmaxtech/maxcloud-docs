@@ -24,12 +24,10 @@
 * [kubemax](guides/client/kubemax.md)
 * [kubectl](guides/client/kubectl.md)
 
-## MaxLang脚本编程
-* [MaxLang](maxlang/help.md)
-
-## 开发者API
-* [Login](guides/client/self-created-client.md)
-* [Trouble Ticket](guides/client/self-created-client.md)
+## 开发者指南
+* [MaxLang脚本编程](maxlang/help.md)
+* [API](guides/client/self-created-client.md)
+  * [Trouble Ticket](guides/client/self-created-client.md)
 
 ## 社区活动
 
