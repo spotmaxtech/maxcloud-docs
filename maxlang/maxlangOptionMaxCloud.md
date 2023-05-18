@@ -371,20 +371,20 @@ listASGs、getASG、updateASG、lockASG 都支持上述使用方式
 
 #### 列出region的ASG， 如果asgName是空， 列出所有的ASG
 ```
-- listASGs("credential", "aws", region, asgName)
+listASGs("credential", "aws", region, asgName)
 ```
 
 #### 更新ASG的最小容量、最大容量、所需容量
 ```
-- updateASG("credential","aws", region, asgName, miniSize, maxSize, desiredSize)
+updateASG("credential","aws", region, asgName, miniSize, maxSize, desiredSize)
 ```
 #### 获取ASG的最大、最小、所需容量
 ```
-- getASG("credential","aws", region, asgName)
+getASG("credential","aws", region, asgName)
 ```
 #### 锁定ASG到lockSize
 ```
-- lockASG("credential","aws", region, asgName, lockSize)
+lockASG("credential","aws", region, asgName, lockSize)
 ```
 e.g.  
 ```
