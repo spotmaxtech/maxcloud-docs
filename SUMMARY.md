@@ -25,10 +25,10 @@
 * [kubectl](guides/client/kubectl.md)
 
 ## 开发者指南
-* [MaxLang脚本编程](maxlang/help.md)
-* [Quick Start](maxlang/quickStart.md)
-* [MaxLang & MaxCloud](maxlang/maxlang & maxcloud.md)
-* [API](guides/client/self-created-client.md)
+* [MaxLang语言基础](maxlang/quickStart.md)
+* [MaxLang内置方法](maxlang/help.md)
+* [MaxLang操作MaxCloud方法](maxlang/maxlangOptionMaxCloud.md)
+* [API接口规范](guides/client/self-created-client.md)
   * [Trouble Ticket](guides/client/self-created-client.md)
 
 ## 社区活动
