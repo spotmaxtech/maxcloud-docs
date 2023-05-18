@@ -375,17 +375,17 @@ listASGs、getASG、updateASG、lockASG 都支持上述使用方式
 ```
 
 #### 更新ASG的最小容量、最大容量、所需容量
-
+```
 - updateASG("credential","aws", region, asgName, miniSize, maxSize, desiredSize)
-
+```
 #### 获取ASG的最大、最小、所需容量
-
+```
 - getASG("credential","aws", region, asgName)
-
+```
 #### 锁定ASG到lockSize
-
+```
 - lockASG("credential","aws", region, asgName, lockSize)
-
+```
 e.g.  
 ```
     listASGs("credential", "aws", "us-west-2", "kmax-demo-asg-small")
@@ -551,7 +551,9 @@ listBucket("credential", "aliyun",  "https://oss-cn-beijing.aliyuncs.com")
 ```
 
 ## 创建文件夹
+```
 newBucketDir
+```
 
 参数1：credential
 
