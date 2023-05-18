@@ -56,7 +56,7 @@ addOrUpdateRepo(参数1, 参数2, 参数3)
 #### 示例:
 ``` 
 applyYaml(参数1, 参数2)
-``` 
+```
 
 ## build_bundle_group_scale_plan
 #### 方法描述:
@@ -72,33 +72,6 @@ build_bundle_group_scale_plan({
 	"scare_source":"same_time_yesterday",
 	"scare_ratio":"1.3"
 })
-``` 
-
-## build_bundle_group_scale_plan
-#### 方法描述:
-``` 
-构建bundle_group的伸缩计划
-```
-
-#### 示例:
-``` 
-build_bundle_group_scale_plan({
-	"team_id":3,
-	"bundle_group_id":8,
-	"scare_source":"same_time_yesterday",
-	"scare_ratio":"1.3"
-})
-``` 
-
-## bundle_group_scare
-#### 方法描述:
-``` 
-根据bundle伸缩计划进行bundle的伸缩
-```
-
-#### 示例:
-``` 
-bundle_group_scare(plan)
 ``` 
 
 ## bundle_group_scare
