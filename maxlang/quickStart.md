@@ -1,7 +1,7 @@
 # MaxLang Quick Start 
 ## -- All New Design, All For DevOps 
 
-MaxLang is the dedicated programming language for automating the DevOps tasks, which is implemented and maintained by SpotMax team.
+MaxLang is the dedicated programming language for automating the DevOps tasks, which is implemented and maintained by MaxCloud team.
 
 ## Primitive Data Types
 ### Number
