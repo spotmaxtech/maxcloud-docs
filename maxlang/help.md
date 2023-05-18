@@ -74,7 +74,7 @@ build_bundle_group_scale_plan({
 })
 ``` 
 
-## bundle_group_scare
+## bundle_group_scale
 #### 方法描述:
 ``` 
 根据bundle伸缩计划进行bundle的伸缩
