@@ -348,27 +348,31 @@ installOrUpgradeChart(bj_demo_crazywolf, "my-wordpress", "bitnami/wordpress", "1
 
 ## 查循已安装的Helm列表
 参…-stage-old.detailroi.mintegral.com")
-```
+
 
 ## AWS ASG Size查询和更改
 
 ASG 相关方法都支持通过公共方法执行云商，或者用云商的方法名，以获取asg为例
 
 - 参数中指定云商（aws、aliyun、huawei）
+```
 
     getASG("credential", "aws","us-west-2", "kmax-demo-asg-small")
+```
 
 - 直接用云商的方法
-
+```
     getAwsASG("credential", "us-west-2", "kmax-demo-asg-small")
+```
 
 listASGs、getASG、updateASG、lockASG 都支持上述使用方式
 
 ### usage:
 
 #### 列出region的ASG， 如果asgName是空， 列出所有的ASG
-
+```
 - listASGs("credential", "aws", region, asgName)
+```
 
 #### 更新ASG的最小容量、最大容量、所需容量
 
@@ -404,29 +408,29 @@ e.g.
 参数3：asgName （可选）
 
 - 获取Aws asg列表
-
+```
 listAwsASGs("credential", "us-west-2")
 
 listAwsASGs("credential", "us-west-2", "asgName")
-
+```
 - 获取阿里云 asg 列表
-
+```
 listAliASGs("credential", "us-west-2")
 
 listAliASGs("credential", "us-west-2", "asgName")
-
+```
 - 获取huawei asg 列表
-
+```
 listHwASGs("credential", "us-west-2")
 
 listHwASGs("credential", "us-west-2", "asgName")
-
+```
 **使用参数指定云商**
-
+```
 listHwASGs("credential", "aws", "us-west-2")
 
 listHwASGs("credential", "aws", "us-west-2", "asgName")
-```
+
 listAwsASGs("credential", "us-west-2")
 listAliASGs("credential", "us-west-2")
 listHwASGs("credential", "us-west-2")
@@ -447,21 +451,20 @@ listHwASGs("credential", "us-west-2")
 参数6：期望值
 
 - 修改Aws asg
-
-updateAwsASG("credential", "us-west-2", "asgName", 1, 100, 50)
-
-- 修改阿里云 asg
-
-updateAliASG("credential", "us-west-2", "asgName", 1, 100, 50)
-
-- 修改 huawei asg
-
-updateHwASG("credential", "us-west-2", "asgName" ,1, 100, 50)
-
-**使用参数指定云商**
-
-updateHwASG("credential", "aws", "us-west-2", "asgName" ,1, 100, 50)
 ```
+updateAwsASG("credential", "us-west-2", "asgName", 1, 100, 50)
+```
+- 修改阿里云 asg
+```
+updateAliASG("credential", "us-west-2", "asgName", 1, 100, 50)
+```
+- 修改 huawei asg
+```
+updateHwASG("credential", "us-west-2", "asgName" ,1, 100, 50)
+```
+**使用参数指定云商**
+```
+updateHwASG("credential", "aws", "us-west-2", "asgName" ,1, 100, 50)
 updateAwsASG("credential", "us-west-2", "kmax-demo-asg-small", 2, 2, 2)
 updateAliASG("credential", "us-west-2", "kmax-demo-asg-small", 2, 2, 2)
 updateHwASG("credential", "us-west-2", "kmax-demo-asg-small", 2, 2, 2)
@@ -482,17 +485,17 @@ updateHwASG("credential", "us-west-2", "kmax-demo-asg-small", 2, 2, 2)
 如果期望值小于参数4锁定值，则期望值修改为所定值
 
 - 锁定Aws asg
-
-lockAwsASG("credential", "us-west-2", "asgName", 10)
-
-- 锁定aliyun asg
-
-lockAliASG("credential", "us-west-2", "asgName", 10)
-
-- 锁定huawei asg
-
-lockHwASG("credential", "us-west-2", "asgName", 10)
 ```
+lockAwsASG("credential", "us-west-2", "asgName", 10)
+```
+- 锁定aliyun asg
+```
+lockAliASG("credential", "us-west-2", "asgName", 10)
+```
+- 锁定huawei asg
+```
+lockHwASG("credential", "us-west-2", "asgName", 10)
+
 lockAwsASG("credential", "us-west-2", "asgName", 10)
 lockAliASG("credential", "us-west-2", "asgName", 10)
 lockHwASG("credential", "us-west-2", "asgName", 10)
@@ -506,17 +509,17 @@ lockHwASG("credential", "us-west-2", "asgName", 10)
 参数3：asgName
 
 - 获取Aws asg列表
-
-getAwsASG("credential", "us-west-2", "asgName")
-
-- 获取阿里云 asg 列表
-
-getAliASG("credential", "us-west-2", "asgName")
-
-- 获取huawei asg 列表
-
-getHwASG("credential", "us-west-2", "asgName")
 ```
+getAwsASG("credential", "us-west-2", "asgName")
+```
+- 获取阿里云 asg 列表
+```
+getAliASG("credential", "us-west-2", "asgName")
+```
+- 获取huawei asg 列表
+```
+getHwASG("credential", "us-west-2", "asgName")
+
 getAwsASG("credential", "us-west-2", "asgName")
 getAliASG("credential", "us-west-2", "asgName")
 getHwASG("credential", "us-west-2", "asgName")
@@ -525,8 +528,9 @@ getHwASG("credential", "us-west-2", "asgName")
 # Bucket 管理
 
 ## 列出Bucket
-
+```
 listBucket
+```
 
 参数1：credential
 
@@ -535,13 +539,13 @@ listBucket
 参数3：endpoint(aliyun的时候必传)
 
 - 列出Aws bucket
-
-listBucket("credential", "aws")
-
-- 列出Aliyun bucket
-
-listBucket("credential", "aliyun",  "https://oss-cn-beijing.aliyuncs.com")
 ```
+listBucket("credential", "aws")
+```
+- 列出Aliyun bucket
+```
+listBucket("credential", "aliyun",  "https://oss-cn-beijing.aliyuncs.com")
+
 listBucket("credential", "aws")
 listBucket("credential", "aliyun",  "https://oss-cn-beijing.aliyuncs.com")
 ```
@@ -560,19 +564,21 @@ newBucketDir
 参数5：endpoint(aliyun的时候必传)
 
 - aws 指定bucket下创建文件
-
-newBucketDir("credential", "aws", "bucketName", "test_dirname")
-
-- aliyun 指定bucket下创建文件
-
-newBucketDir("credential", "aliyun", "bucketName", "test_dirname", "https://oss-cn-beijing.aliyuncs.com")
 ```
+newBucketDir("credential", "aws", "bucketName", "test_dirname")
+```
+- aliyun 指定bucket下创建文件
+```
+newBucketDir("credential", "aliyun", "bucketName", "test_dirname", "https://oss-cn-beijing.aliyuncs.com")
+
 newBucketDir("credential", "aws", "bucketName", "test_dirname")
 newBucketDir("credential", "aliyun", "bucketName", "test_dirname", "https://oss-cn-beijing.aliyuncs.com")
 ```
 
 ## 列出Bucket 中的文件
+```
 listBucketFile
+```
 
 参数1：credential
 
@@ -585,13 +591,13 @@ listBucketFile
 参数5：endpoint(aliyun的时候必传)
 
 - 列出aws 指定bucket 下的文件
-
-listBucketFile("credential", "aws", "bucketName", "test_dirname/")
-
-- 列出aliyun 指定bucket 下的文件
-
-listBucketFile("credential", "aliyun", "bucketName", "test_dirname/", "https://oss-cn-beijing.aliyuncs.com")
 ```
+listBucketFile("credential", "aws", "bucketName", "test_dirname/")
+```
+- 列出aliyun 指定bucket 下的文件
+```
+listBucketFile("credential", "aliyun", "bucketName", "test_dirname/", "https://oss-cn-beijing.aliyuncs.com")
+
 listBucketFile("credential", "aws", "bucketName", "test_dirname/")
 listBucketFile("credential", "aliyun", "bucketName", "test_dirname/", "https://oss-cn-beijing.aliyuncs.com")
 ```
