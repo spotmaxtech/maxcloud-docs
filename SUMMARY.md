@@ -27,6 +27,7 @@
 ## 开发者指南
 * [MaxLang脚本编程](maxlang/help.md)
 * [Quick Start](maxlang/quickStart.md)
+* [MaxLang & MaxCloud](maxlang/maxlang & maxcloud.md)
 * [API](guides/client/self-created-client.md)
   * [Trouble Ticket](guides/client/self-created-client.md)
 
