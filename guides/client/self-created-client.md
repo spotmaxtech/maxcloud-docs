@@ -15,7 +15,7 @@ sidebarDepth: 2
 ### 登陆
 
 ```
-curl --location --request POST 'https://maxcloud-api-test.spotmaxtech.com/api/login' \
+curl --location --request POST 'https://maxcloud-api.spotmaxtech.com/api/login' \
 --header 'User-Agent: apifox/1.0.0 (https://www.apifox.cn)' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -65,7 +65,7 @@ curl --location --request POST 'https://maxcloud-api-test.spotmaxtech.com/api/lo
 如果需要操作的资源不在当前默认组DefaultTeam， 需要切换到资源所在的组, 获得操作资源的<auth_token2>
 
 ```
-curl --location --request POST 'https://maxcloud-api-test.spotmaxtech.com/api/company/switch' \
+curl --location --request POST 'https://maxcloud-api.spotmaxtech.com/api/company/switch' \
 --header 'authorization: <auth_token>' \
 --header 'User-Agent: apifox/1.0.0 (https://www.apifox.cn)' \
 --header 'Content-Type: application/json' \
@@ -112,7 +112,7 @@ curl --location --request POST 'https://maxcloud-api-test.spotmaxtech.com/api/co
 
 ### 获取Ticket列表
 ```
-curl --location --request GET 'https://maxcloud-api-test.spotmaxtech.com/api/tickets?scope=0&page=1&page_size=2' \
+curl --location --request GET 'https://maxcloud-api.spotmaxtech.com/api/tickets?scope=0&page=1&page_size=2' \
 --header 'authorization: <auth_token2>' \
 --header 'User-Agent: apifox/1.0.0 (https://www.apifox.cn)'
 ```
@@ -165,7 +165,7 @@ scope参数：
 
 ### 查找Group Tag是default的Ticket列表
 ```
-curl --location --request GET 'https://maxcloud-api-test.spotmaxtech.com/api/tickets?scope=3&page=1&page_size=10&group_tag=default&include_closed=false' \
+curl --location --request GET 'https://maxcloud-api.spotmaxtech.com/api/tickets?scope=3&page=1&page_size=10&group_tag=default&include_closed=false' \
 --header 'authorization: <auth_token2>' \
 --header 'User-Agent: apifox/1.0.0 (https://www.apifox.cn)'
 ```
