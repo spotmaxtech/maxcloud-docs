@@ -23,6 +23,7 @@
 
 * [kubemax](guides/client/kubemax.md)
 * [kubectl](guides/client/kubectl.md)
+* [自定义客户端](guides/client/self-created-client.md)
 
 ## 开发者指南
 * [MaxLang语言基础](maxlang/quickStart.md)
