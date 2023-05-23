@@ -28,7 +28,7 @@
 ## 开发者指南
 * [MaxLang语言基础](maxlang/quickStart.md)
 * [MaxLang内置方法](maxlang/help.md)
-* [MaxLang操作MaxCloud方法](maxlang/maxlangOptionMaxCloud.md)
+* [MaxLang操作资源示例](maxlang/maxlangOptionMaxCloud.md)
 * [API接口规范](guides/client/self-created-client.md)
   * [Trouble Ticket](guides/client/self-created-client.md)
 
