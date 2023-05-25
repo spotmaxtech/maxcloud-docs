@@ -33,7 +33,7 @@
   * [Trouble Ticket](guides/client/self-created-client.md)
 
 ## 社区活动
-
+* [技术交流](community/techtalk/README.md)
 * [Kubernetes Workshop](community/kubernetes-workshop/README.md)
   * [基础篇](community/kubernetes-workshop/basic/README.md)
     * [Docker学习环境](community/kubernetes-workshop/basic/docker-xue-xi-huan-jing.md)
