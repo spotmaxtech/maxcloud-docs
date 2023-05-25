@@ -34,6 +34,7 @@
 
 ## 社区活动
 * [技术交流](community/techtalk/README.md)
+  * [2023/05/28 亚马逊云科技 Community Day 深圳站](community/techtalk/20230528-aws-community-day.md)
 * [Kubernetes Workshop](community/kubernetes-workshop/README.md)
   * [基础篇](community/kubernetes-workshop/basic/README.md)
     * [Docker学习环境](community/kubernetes-workshop/basic/docker-xue-xi-huan-jing.md)
