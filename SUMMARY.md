@@ -37,7 +37,7 @@
 * [技术交流](community/techtalk/README.md)
   * [2023/05/28 亚马逊云科技 Community Day 深圳站](community/techtalk/20230528-aws-community-day.md)
 * [技术文章](she-qu-huo-dong/ji-shu-wen-zhang/README.md)
-  * [2023.5 记一次EKS 1.22->1.26 升级](she-qu-huo-dong/ji-shu-wen-zhang/2023.5-ji-yi-ci-eks-1.221.26-sheng-ji.md)
+  * [2023.5 记一次EKS 1.22->1.26 升级](she-qu-huo-dong/ji-shu-wen-zhang/2023.6-ji-yi-ci-eks-1.221.25-sheng-ji.md)
 * [Kubernetes Workshop](community/kubernetes-workshop/README.md)
   * [基础篇](community/kubernetes-workshop/basic/README.md)
     * [Docker学习环境](community/kubernetes-workshop/basic/docker-xue-xi-huan-jing.md)
