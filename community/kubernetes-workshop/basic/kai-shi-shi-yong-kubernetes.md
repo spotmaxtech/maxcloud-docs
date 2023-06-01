@@ -36,7 +36,7 @@ alias k=kubectl
 
 导出的Kubeconfig文件放到本地**.kube**路径下，并使用**kubens**切换到自己的命名空间
 
-<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -135,7 +135,7 @@ spec:
         - containerPort: 8080
 ```
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 `资源管理—Service—Yaml部署`
 
@@ -159,7 +159,7 @@ spec:
   type: LoadBalancer
 ```
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```
 $ k get replicaset
