@@ -23,8 +23,7 @@
 
 * [kubemax](guides/client/kubemax.md)
 * [kubectl](guides/client/kubectl.md)
-* [自定义客户端
-  ](guides/client/self-created-client.md)
+* [自定义客户端](guides/client/self-created-client.md)
 
 ## MrMax
 
@@ -35,14 +34,14 @@
 * [MaxLang语言基础](maxlang/quickStart.md)
 * [MaxLang内置方法](maxlang/help.md)
 * [MaxLang操作资源示例](maxlang/maxlangOptionMaxCloud.md)
-* 
 
 ## 社区活动
 
 * [技术交流](community/techtalk/README.md)
   * [2023/05/28 亚马逊云科技 Community Day 深圳站](community/techtalk/20230528-aws-community-day.md)
 * [技术文章](community/techdoc/README.md)
-  * [2023.5 记一次EKS 1.22-&gt;1.26 升级](community/techdoc/2023.6-ji-yi-ci-eks-1.221.25-sheng-ji.md)
+  * [2023.5 记一次EKS 1.22->1.26 升级](community/techdoc/2023.6-ji-yi-ci-eks-1.221.25-sheng-ji.md)
+  * [2023.8 创建EKS后要关注的几个事情](she-qu-huo-dong/techdoc/2023.8-chuang-jian-eks-hou-yao-guan-zhu-de-ji-ge-shi-qing.md)
 * [Kubernetes Workshop](community/kubernetes-workshop/README.md)
   * [基础篇](community/kubernetes-workshop/basic/README.md)
     * [Docker学习环境](community/kubernetes-workshop/basic/docker-xue-xi-huan-jing.md)
