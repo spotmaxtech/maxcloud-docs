@@ -112,25 +112,24 @@ curl --location --request POST 'https://maxcloud-api.spotmaxtech.com/api/company
 
 ### 获取Ticket列表
 ```
-curl --location --request GET 'https://maxcloud-api.spotmaxtech.com/api/tickets?scope=0&page=1&page_size=2' \
---header 'authorization: <auth_token2>' \
---header 'User-Agent: apifox/1.0.0 (https://www.apifox.cn)'
+curl 'https://maxcloud-api.spotmaxtech.com/api/tickets/search' \
+  -H 'authority: maxcloud-api.spotmaxtech.com' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'authorization: <auth_token2>' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36' \
+  --data-raw '{"start_time":1577808000000,"page_size":1,"page":1,"end_time":1693818887635,"query":""}' \
 ```
-scope参数： 
-0 Company ,1 Team, 2 assigned_to, default to 0
 
 输出示例
 ```
 {
     "status": 200,
-    "request_id": "1411d3f1c17043d1a8ac6c7c8f89fdb2",
+    "err_code": 0,
     "message": "success",
     "data": {
+        "total": 118,
+        "page_size": 1,
         "page": 1,
-        "page_count": 2,
-        "result_count": 4,
-        "open": 4,
-        "closed": 99,
         "tickets": [
             {
                 "id": 101,
@@ -163,27 +162,27 @@ scope参数：
 }
 ```
 
-### 查找Group Tag是default的Ticket列表
+### 查找BU是mtg的Ticket列表
 ```
-curl --location --request GET 'https://maxcloud-api.spotmaxtech.com/api/tickets?scope=3&page=1&page_size=10&group_tag=default&include_closed=false' \
---header 'authorization: <auth_token2>' \
---header 'User-Agent: apifox/1.0.0 (https://www.apifox.cn)'
+curl 'https://maxcloud-api.spotmaxtech.com/api/tickets/search' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'authorization: <auth_token2>' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36' \
+  --data-raw '{"page":1,"page_size":30,"start_time":1577808000000,"end_time":1693818887594,"query":"group_tag:mtg AND state:open"}' \
+  --compressed
 ```
-scope参数： 
-0 Company ,1 Team, 2 assigned_to, 3 group_tag, default to 0
 
 输出示例
 ```
 {
     "status": 200,
-    "request_id": "1411d3f1c17043d1a8ac6c7c8f89fdb2",
+    "err_code": 0,
     "message": "success",
     "data": {
+        "total": 118,
+        "page_size": 1,
         "page": 1,
-        "page_count": 2,
-        "result_count": 4,
-        "open": 4,
-        "closed": 99,
         "tickets": [
             {
                 "id": 101,
@@ -216,3 +215,55 @@ scope参数：
 }
 ```
 
+### 查找BU是‘mgt’、标签是‘日志bug’的Ticket列表
+```
+curl 'https://maxcloud-api.spotmaxtech.com/api/tickets/search' \
+  -H 'accept: application/json, text/plain, */*' \
+  -H 'accept-language: zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7' \
+  -H 'authorization: <auth_token2>' \
+  -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36' \
+  --data-raw '{"page":1,"page_size":30,"start_time":1577808000000,"end_time":1693818887594,"query":"group_tag:mtg AND labels:日志bug AND state:open"}' \
+  --compressed
+```
+
+输出示例
+```
+{
+    "status": 200,
+    "err_code": 0,
+    "message": "success",
+    "data": {
+        "total": 118,
+        "page_size": 1,
+        "page": 1,
+        "tickets": [
+            {
+                "id": 101,
+                "company_id": 1,
+                "team_id": 1,
+                "team_name": "",
+                "created_by": "<email>",
+                "assigned_to": "<email>",
+                "updated_by": "<email>",
+                "state": "open",
+                "priority": 2,
+                "root_cause": "",
+                "subject": "pod event warn 需要解决",
+                "content_type": "",
+                "content": "",
+                "comment_count": 5,
+                "notification_list": [
+                    "<email>"
+                ],
+                "created_at": "2023-05-11 16:34:54",
+                "updated_at": "2023-05-11 16:37:43",
+                "resources": null,
+                "tips": ""
+            },
+            ... more tickets ...
+        ],
+        "search_scope": "0:company"
+    },
+    "time": 1684312548
+}
+```
