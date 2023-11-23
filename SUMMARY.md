@@ -28,6 +28,7 @@
 ## MrMax
 
 * [MrMax客户端使用指南](guides/mrmax/client.md)
+* [Cybercore](mrmax/cybercore.md)
 
 ## 开发者指南
 
