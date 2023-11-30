@@ -29,6 +29,7 @@
 
 * [MrMax客户端使用指南](guides/mrmax/client.md)
 * [Cybercore](mrmax/cybercore.md)
+* [SDK Release Version](mrmax/sdk-release-version.md)
 
 ## 开发者指南
 
